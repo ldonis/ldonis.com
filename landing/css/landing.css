@@ -1,0 +1,146 @@
+
+/*
+ * Front content
+ */
+#front .profile{
+    width: 100%;
+    
+    background-image: url('../img/software.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#front div{
+    background-color: transparent;
+}
+
+    /*
+     *  Foto de perfil
+     */
+    #front #foto{
+       width: 220px;
+       height: 220px;
+       display: block;
+       border-radius: 50%;
+       border: 10px solid #343434;
+       background: url('../img/ldonis.jpg'); 
+       background-size: cover;
+       transition: all linear 0.2s;
+       margin: 0 auto 10px;
+    }
+
+    #front .profile_content{
+        height: calc(100vh - 100px);
+        text-align: center;
+        width: 50%;
+    }
+    
+    #front .profile_content:hover #foto{
+       width: 250px;
+       height: 250px;
+       border-radius: 1%;
+       border: 1px solid #343434;
+    }
+    
+    #front .profile_content:hover p{
+        font-style: italic;
+    }
+    
+    /*
+     * Slogan
+     */
+    #front .profile_content p{
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    
+    /*
+     * iconos de redes sociales
+     */
+    #front .social{
+        height: 100px;
+    }
+    
+    #front .social a{
+        font-size: 2.6rem;
+        color: #2c2c2c;
+        padding: 0px 25px;
+    }
+    
+    #front .social a:hover{
+        color: #3c3c3c;   
+    }
+
+
+/*
+ * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+ */
+#projects{
+    text-align: center;
+    background-color: #f1f1f1;
+}    
+    
+#projects .project{
+    height: 385px;
+}
+
+#projects .project img{
+}
+
+
+/*
+ * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+ */
+#about{
+    text-align: center;
+    background-color: #47B0E2;
+}
+
+    #about p{
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+
+/*
+ * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+ */
+#footer{
+    background: #303437;
+    color: #1D1E20;
+} 
+    
+
+/*
+ *  MediaQueries
+ */
+@media screen and (max-width : 675px){
+    
+    /*
+     * Front content
+     */
+    #front .profile{
+        background-position: center right;
+    }
+
+        #front .profile_content{
+            width: 100%;
+        }
+
+        /*
+         * Slogan
+         */
+        #front .profile_content p{
+            font-family: 'roboto300';  
+            background-color: rgba(210,210,210,0.3);
+        }
+
+        /*
+         * iconos de redes sociales
+         */
+        #front .social a{
+            padding: 0px 13px;
+        }
+
+}

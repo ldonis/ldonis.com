@@ -1,0 +1,20 @@
+## YAML Template.
+portada:
+    title: FINCA's websites overview
+slide01:
+    title: Content
+    menu01: 1. About Me
+    menu02: 2. Hosting providers
+    menu03: 3. Domain name providers
+    menu04: 4. Web server administration    
+    menu05: 5. Web development tools
+    menu06: 6. Third-Party libraries
+    menu07: 7. Third-Party services
+    menu08: 8. Bugherd
+    menu09: 9.
+slide02:
+    title: About Me
+slide03:
+    title: Hosting providers
+slide04:
+    title: Domain name providers

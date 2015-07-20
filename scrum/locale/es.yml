@@ -1,0 +1,16 @@
+## YAML Template.
+portada:
+    title: Revision sitios web FINCA
+slide01:
+    title: Content
+    menu01: 1. About Me
+    menu02: 2. Hosting providers
+    menu03: 3. Domain name providers
+    menu04: 4. Web server administration tool
+    menu05: 5. Web administration dashboard
+    menu06: 6. Web development tools
+    menu07: 7. Third-Party libraries
+    menu08: 8. Third-Party services
+    menu09: 9. Bugherd
+slide2:
+    title: About Me
