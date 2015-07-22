@@ -1,19 +1,31 @@
+body, html {
+  height: 100%;
+}
 
 /*
  * Front content
  */
+#front{
+    height: 100%;
+}
 #front .profile{
+    height: calc(100% - 100px);
     width: 100%;
-    
     background-image: url('../img/software.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#front div{
-    background-color: transparent;
-}
+    #front .profile_content{
+        height: calc(100% - 100px);
+        text-align: center;
+        width: 50%;
+    }
+
+    #front div{
+        background-color: transparent;
+    }
 
     /*
      *  Foto de perfil
@@ -30,21 +42,19 @@
        margin: 0 auto 10px;
     }
 
-    #front .profile_content{
-        height: calc(100vh - 100px);
-        text-align: center;
-        width: 50%;
-    }
+
     
     #front .profile_content:hover #foto{
        width: 250px;
        height: 250px;
        border-radius: 1%;
        border: 1px solid #343434;
+       transition-delay: 1s;
     }
     
     #front .profile_content:hover p{
         font-style: italic;
+        transition-delay: 1s;
     }
     
     /*
@@ -60,16 +70,20 @@
      */
     #front .social{
         height: 100px;
+        background: url('kk.jpg') no-repeat;
     }
     
     #front .social a{
-        font-size: 2.6rem;
         color: #2c2c2c;
-        padding: 0px 25px;
+        font-size: 2.6rem;
+        width: 110px;
+        background-color: transparent;
+        transition: all linear 0.2s;
     }
     
     #front .social a:hover{
-        color: #3c3c3c;   
+        color: #f9f9f9;
+        text-shadow: 0px 0px 3px #2c2c2c;
     }
 
 
@@ -80,13 +94,18 @@
     text-align: center;
     background-color: #f1f1f1;
 }    
-    
-#projects .project{
-    height: 385px;
-}
 
-#projects .project img{
-}
+    
+    
+    #projects .project{
+        height: 400px;
+    }
+    
+    #projects .project a{
+        width: 100%;
+        display: block;
+    }
+
 
 
 /*
@@ -106,16 +125,67 @@
 /*
  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
  */
+#contact{
+    background: url('../img/kite.jpg') no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 100%;
+}
+
+    #contact h2{
+        text-align: center;
+    }
+    #contact form{
+        width: 90%;
+        max-width: 500px;
+    }
+    #contact form div div:first-child{ padding-right: 2px;}
+    #contact form div div:last-child{ padding-left: 2px;}
+
+    #contact form input:not([type="submit"]) {
+          background-color: rgba(255,255,255,0.5);
+    }
+    #contact form textarea{
+        width: 100%;
+        resize: vertical;
+        resize: none;
+        background-color: rgba(255,255,255,0.5);
+    }
+
+/*
+ * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+ */
 #footer{
     background: #303437;
+    text-align: center;
     color: #1D1E20;
 } 
+
+    #footer a{
+        font-size: 2.5rem;
+        padding: 50px 25px 40px;
+    }
     
+    #footer a:hover{
+        color: #303437;
+        text-shadow: 0px 0px 3px #f1f1f1;
+    }
+    
+    #footer p{
+        text-align: center;
+        color: #a5a5a5;
+        font-family: 'roboto300';
+        padding: 0px 0 15px 0;
+    }
 
 /*
  *  MediaQueries
  */
 @media screen and (max-width : 675px){
+    
+    h2{
+        font-size: 1.7rem;
+    }
     
     /*
      * Front content
@@ -124,6 +194,14 @@
         background-position: center right;
     }
 
+        /*
+         *  Foto de perfil
+         */
+        #front #foto{
+           width: 175px;
+           height: 175px;
+        }
+    
         #front .profile_content{
             width: 100%;
         }
@@ -140,7 +218,14 @@
          * iconos de redes sociales
          */
         #front .social a{
+            font-size: 2.3rem;
+            width: 70px;
             padding: 0px 13px;
         }
 
+    #footer a{
+        font-size: 2rem;
+        padding: 35px 10px;
+    }
+        
 }

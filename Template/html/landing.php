@@ -12,8 +12,9 @@
   
     echo
         $html->css('rcat.min','public') .
+        //$html->css();
         $html->css('generic', 'template') .
-        $html->css('landing');
+        $html->css( $site );
     
 ?>
 
@@ -23,18 +24,19 @@
     
     echo '<div class="lang_content">';
         echo $html->menu(
-            array( 'lang' => array('text'=>'<i class="icon-globe"></i>')),
-            array('class'=>'rnavbar multi language'));
+            array( 'lang' => array('text'=>'<i class="icon-globe"></i>' )),
+            array( 'class'=>'rnavbar multi language' ));
     echo '</div>';
 
     require $content;
     
     echo
         $html->js('jquery.min','public') .
-        $html->js('slider-min','public') .
+        $html->js('slider.min','public') .
         $html->js('landing') .
         $html->js('analytics', 'template');
     
 ?>
+
 </body>
 </html>
