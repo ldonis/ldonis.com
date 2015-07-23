@@ -1,3 +1,10 @@
-bio1: Hola, Mi nombre es Luis Gdonis
-bio2: Soy desarrollador de software =]
-bio3: ...y un amante de la ciencia :)
+titles:
+    projects: Algunos de mis mejores proyectos
+    about: Sobre Mi
+    contact: Tienes algún proyecto? <br> Contactame! y dejame ayudarte.
+about:
+    bio1: Hello, My name is Luis Gdonis
+    bio2: Soy desarrollador de software =]
+    bio3: ...y un amante de la ciencia :)
+    slogan1: Lover of theoretical physics and software development,
+    slogan2: Always in search of knowledge ...
