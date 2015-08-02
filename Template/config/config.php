@@ -1,5 +1,15 @@
 <?php
 /*
+ * Website info
+ */
+Configure::write('info', array(
+    'name' => 'ldonis.com',
+    'description' => 'My personal website',
+    'version' => '3.0.0-RC2',
+    'env' => 'produ '
+));
+
+/*
  * Plantillas
  */
 Configure::write('template', array(
@@ -17,7 +27,7 @@ Configure::write('vars', array(
  * Librerias a utilizar
  */
 Configure::write('libs', array(
-     'yamles'=>'ldonis/yamles'
+     'yamles'=>'yamles'
 ));
 
 /*

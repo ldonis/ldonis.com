@@ -9,13 +9,17 @@
     <link rel="canonical" href="http://www.ldonis.com/">
 
 <?php
-  
-    echo
-        $html->css('rcat.min','public') .
-        //$html->css();
-        $html->css('generic', 'template') .
-        $html->css( $site );
-    
+    if($info['env'] == 'dev'):
+        echo
+            $html->css('rcat.min','public') .
+            $html->css('generic', 'template') .
+            $html->css( $site );
+    else:
+        echo
+            $html->css().
+            
+            $html->js();
+    endif;
 ?>
 
 </head>
