@@ -222,7 +222,7 @@ body, html {
             padding: 0px 13px;
         }
 
-    #footer a{
+    #footer ul a{
         font-size: 2rem;
         padding: 35px 10px;
     }
