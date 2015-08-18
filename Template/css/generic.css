@@ -3,20 +3,20 @@
  */
 @font-face{
     font-family: 'pinyon';
-    src: url('../../Template/font/pinyon.woff') format('woff');
+    src: url('../../../Public/font/pinyon.woff') format('woff');
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'roboto100';
+    src: url('../../../Public/font/roboto100.woff') format('woff');
     font-weight: 100;
 }
 
 @font-face{
     font-family: 'roboto300';
-    src: url('../../Template/font/roboto300.woff') format('woff');
+    src: url('../../../Public/font/roboto300.woff') format('woff');
     font-weight: 300;
-}
-
-@font-face{
-    font-family: 'roboto100';
-    src: url('../../Template/font/roboto100.woff') format('woff');
-    font-weight: 100;
 }
 
 @font-face {

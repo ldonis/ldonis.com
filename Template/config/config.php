@@ -6,7 +6,7 @@ Configure::write('info', array(
     'name' => 'ldonis.com',
     'description' => 'My personal website',
     'version' => '3.0.0-RC2',
-    'env' => 'produ'
+    'env' => 'dev'
 ));
 
 /*
@@ -43,3 +43,12 @@ Configure::write('lang', array(
     'en' => 'English',
     'default' => 'en'
 ));
+
+/*
+ *  Mail setup
+ */
+Configure::write('mail', array(
+    'type' => 'server',
+    'subject' => 'New email from Lesli',
+    'destination' => 'gdonis.emc2@gmail.com'
+ ));

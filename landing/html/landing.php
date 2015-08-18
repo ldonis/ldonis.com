@@ -42,26 +42,29 @@
                     </a>
                 </div>
             </li>
-        </ul>        
+        </ul>
     </article>
 </section>
 <section id="contact">
     <article class="vertical">
         <div class="middle">
             <br><br>
-            <h2><?php $_('contact', 'titles'); ?></h2>
+            <h2><?php $e('contact', 'titles'); ?></h2>
             <br>
-                <form class="rform block">
+
+            <?php
+                echo $mail->form(array('class'=>'rform block'));
+            ?>
                     <div class="rgrid columns-02">
                         <div>
-                            <input type="text" placeholder="<?php $e('name','form'); ?>">
+                            <input type="text" name="LesliFormMail_name" placeholder="<?php $e('name','form'); ?>">
                         </div>
                         <div>
-                            <input type="tel" placeholder="<?php $e('phone','form'); ?>">
+                            <input type="tel" name="LesliFormMail_phone" placeholder="<?php $e('phone','form'); ?>">
                         </div>
                     </div>
-                    <input type="email" placeholder="Email">
-                    <textarea rows="4" placeholder="<?php $e('message','form'); ?>"></textarea>
+                    <input type="email" name="LesliFormMail_email" placeholder="Email">
+                    <textarea rows="4" name="LesliFormMail_message" placeholder="<?php $e('message','form'); ?>"></textarea>
                     <input type="submit" value="<?php $e('send','form'); ?>" class="rbutton-primary">
                 </form>
             <br><br>
