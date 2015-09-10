@@ -1,0 +1,203 @@
+body
+html
+    height 100%
+
+#landing
+
+    /*
+     * Front content
+     */
+    #front
+        height 100vh
+
+        .profile
+            height calc(100% - 100px)
+            width 100%
+            background-image url('../img/software.jpg')
+            background-repeat no-repeat
+            background-size cover
+            background-position center center
+
+            div
+                text-align center
+                background-color transparent
+
+                div
+                    background-color inherit
+
+                    /*
+                     *  Foto de perfil
+                     */
+                    #foto
+                       width 220px
+                       height 220px
+                       display block
+                       border-radius 50%
+                       border 10px solid #343434
+                       background url('../img/ldonis.jpg')
+                       background-size cover
+                       transition all linear 0.2s
+                       margin 0 auto 10px
+
+                       &:hover
+                            width 250px
+                            height 250px
+                            border-radius 1%
+                            border 1px solid #343434
+                            transition-delay 1s
+
+                    /*
+                     * Slogan
+                     */
+                    p
+                        font-size 1.9rem
+                        line-height 1.2
+
+                        &:hover
+                            font-style italic
+
+    /*
+     * iconos de redes sociales
+     */
+    .social
+        text-align center
+
+        div
+            height 100px
+
+            a
+                color #2c2c2c
+                font-size 2.6rem
+                width 110px
+                background-color transparent
+                transition all linear 0.2s
+
+                &:hover
+                    color #f9f9f9
+                    text-shadow 0px 0px 3px #2c2c2c
+
+    /*
+     * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+     */
+    #projects
+        text-align center
+        background-color #f1f1f1
+
+        .project
+            height 400px
+
+            a
+                width 100%
+                display block
+
+    /*
+     * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+     */
+    #contact
+        background url('../img/kite.jpg') no-repeat
+        background-position center bottom
+        background-size cover
+
+        > article
+            height 100vh
+
+        h2
+            text-align center
+
+        form
+            width 90%
+            max-width 500px
+
+            div
+
+                div
+
+                    &:first-child
+                        padding-right 2px
+
+                    &:last-child
+                        padding-left 2px
+
+            input:not([type="submit"])
+                background-color rgba(255,255,255,0.7)
+
+            textarea
+                width 100%
+                resize vertical
+                resize none
+                background-color rgba(255,255,255,0.7)
+
+    /*
+     * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+     */
+    #footer
+        background #303437
+        text-align center
+        color #1D1E20
+
+        ul a
+            font-size 2.5rem
+            padding 40px 25px 10px
+
+            &:hover
+                color #303437
+                text-shadow 0px 0px 3px #f2f2f2
+
+        p
+            padding 15px 0
+            text-align center
+            color #a5a5a5
+            font-family 'roboto300'
+
+
+
+/*
+*  MediaQueries
+* /
+@media screen and (max-width  675px)
+
+h2
+font-size 1.7rem
+
+
+/*
+* Front content
+* /
+#front .profile
+background-position center right
+
+
+/*
+*  Foto de perfil
+* /
+#front #foto
+width 175px
+height 175px
+
+
+#front .profile_content
+width 100%
+
+
+/*
+* Slogan
+* /
+#front .profile_content p
+font-family 'roboto300'
+background-color rgba(210,210,210,0.3)
+
+
+/*
+* iconos de redes sociales
+* /
+#front .social a
+font-size 2.3rem
+width 70px
+padding 0px 13px
+
+
+#footer ul a
+font-size 2rem
+padding 35px 10px
+
+*/

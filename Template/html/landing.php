@@ -11,13 +11,18 @@
 <?php
     if($info['env'] == 'dev'):
         echo
+            $html->js('jquery.min','public') .
+            $html->js('slider.min','public') .
+            $html->js('landing') .
+            $html->js('analytics', 'template').
+
             $html->css('rcat.min','public') .
             $html->css('generic', 'template') .
             $html->css( $site );
     else:
         echo
             $html->css().
-            
+
             $html->js();
     endif;
 ?>
@@ -25,21 +30,15 @@
 </head>
 <body>
 <?php
-    
+
     echo '<div class="lang_content">';
         echo $html->menu(
             array( 'lang' => array('text'=>'<i class="icon-globe"></i>' )),
-            array( 'class'=>'rnavbar multi language' ));
+            array( 'class'=>'rnav multi language' ));
     echo '</div>';
 
     require $content;
-    
-    echo
-        $html->js('jquery.min','public') .
-        $html->js('slider.min','public') .
-        $html->js('landing') .
-        $html->js('analytics', 'template');
-    
+
 ?>
 
 </body>

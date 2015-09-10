@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    
+
     /*
      * Inicializa el slider
      */
@@ -11,4 +11,5 @@ jQuery(document).ready(function($) {
         keyboardnav : false,
         hoverpause : false
     });
+    
 });

@@ -6,7 +6,7 @@ Configure::write('info', array(
     'name' => 'ldonis.com',
     'description' => 'My personal website',
     'version' => '3.0.0-RC2',
-    'env' => 'dev'
+    'env' => 'live'
 ));
 
 /*
@@ -27,7 +27,7 @@ Configure::write('vars', array(
  * Librerias a utilizar
  */
 Configure::write('libs', array(
-     'yamles'=>'yamles'
+     'yamles'=>'ldonis/yamles'
 ));
 
 /*

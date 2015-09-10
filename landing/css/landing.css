@@ -1,230 +1,130 @@
-body, html {
+body,
+html {
   height: 100%;
 }
-
-/*
- * Front content
- */
-#front{
-    height: 100%;
+#landing #front {
+  height: 100vh;
 }
-#front .profile{
-    height: calc(100% - 100px);
-    width: 100%;
-    background-image: url('../img/software.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#landing #front .profile {
+  height: calc(100% - 100px);
+  width: 100%;
+  background-image: url("../img/software.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
-    #front .profile_content{
-        height: calc(100% - 100px);
-        text-align: center;
-        width: 50%;
-    }
-
-    #front div{
-        background-color: transparent;
-    }
-
-    /*
-     *  Foto de perfil
-     */
-    #front #foto{
-       width: 220px;
-       height: 220px;
-       display: block;
-       border-radius: 50%;
-       border: 10px solid #343434;
-       background: url('../img/ldonis.jpg'); 
-       background-size: cover;
-       transition: all linear 0.2s;
-       margin: 0 auto 10px;
-    }
-
-
-    
-    #front .profile_content:hover #foto{
-       width: 250px;
-       height: 250px;
-       border-radius: 1%;
-       border: 1px solid #343434;
-       transition-delay: 1s;
-    }
-    
-    #front .profile_content:hover p{
-        font-style: italic;
-        transition-delay: 1s;
-    }
-    
-    /*
-     * Slogan
-     */
-    #front .profile_content p{
-        font-size: 1.9rem;
-        line-height: 1.2;
-    }
-    
-    /*
-     * iconos de redes sociales
-     */
-    #front .social{
-        height: 100px;
-    }
-    
-    #front .social a{
-        color: #2c2c2c;
-        font-size: 2.6rem;
-        width: 110px;
-        background-color: transparent;
-        transition: all linear 0.2s;
-    }
-    
-    #front .social a:hover{
-        color: #f9f9f9;
-        text-shadow: 0px 0px 3px #2c2c2c;
-    }
-
-
-/*
- * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
- */
-#projects{
-    text-align: center;
-    background-color: #f1f1f1;
-}    
-
-    
-    
-    #projects .project{
-        height: 400px;
-    }
-    
-    #projects .project a{
-        width: 100%;
-        display: block;
-    }
-
-
-
-/*
- * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
- */
-#about{
-    text-align: center;
-    background-color: #47B0E2;
+#landing #front .profile div {
+  text-align: center;
+  background-color: transparent;
 }
-
-    #about p{
-        font-size: 2rem;
-        line-height: 1.1;
-    }
-
-
+#landing #front .profile div div {
+  background-color: inherit;
 /*
- * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
- */
-#contact{
-    background: url('../img/kite.jpg') no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    height: 100%;
+                     *  Foto de perfil
+                     */
+/*
+                     * Slogan
+                     */
 }
-
-    #contact h2{
-        text-align: center;
-    }
-    #contact form{
-        width: 90%;
-        max-width: 500px;
-    }
-    #contact form div div:first-child{ padding-right: 2px;}
-    #contact form div div:last-child{ padding-left: 2px;}
-
-    #contact form input:not([type="submit"]) {
-          background-color: rgba(255,255,255,0.7);
-    }
-    #contact form textarea{
-        width: 100%;
-        resize: vertical;
-        resize: none;
-        background-color: rgba(255,255,255,0.7);
-    }
-
-/*
- * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
- */
-#footer{
-    background: #303437;
-    text-align: center;
-    color: #1D1E20;
-} 
-
-    #footer ul a{
-        font-size: 2.5rem;
-        padding: 50px 25px 40px;
-    }
-    
-    #footer ul a:hover{
-        color: #303437;
-        text-shadow: 0px 0px 3px #f2f2f2;
-    }
-    
-    #footer p{
-        text-align: center;
-        color: #a5a5a5;
-        font-family: 'roboto300';
-        padding: 0px 0 15px 0;
-    }
-
-/*
- *  MediaQueries
- */
-@media screen and (max-width : 675px){
-    
-    h2{
-        font-size: 1.7rem;
-    }
-    
-    /*
-     * Front content
-     */
-    #front .profile{
-        background-position: center right;
-    }
-
-        /*
-         *  Foto de perfil
-         */
-        #front #foto{
-           width: 175px;
-           height: 175px;
-        }
-    
-        #front .profile_content{
-            width: 100%;
-        }
-
-        /*
-         * Slogan
-         */
-        #front .profile_content p{
-            font-family: 'roboto300';  
-            background-color: rgba(210,210,210,0.3);
-        }
-
-        /*
-         * iconos de redes sociales
-         */
-        #front .social a{
-            font-size: 2.3rem;
-            width: 70px;
-            padding: 0px 13px;
-        }
-
-    #footer ul a{
-        font-size: 2rem;
-        padding: 35px 10px;
-    }
-        
+#landing #front .profile div div #foto {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border-radius: 50%;
+  border: 10px solid #343434;
+  background: url("../img/ldonis.jpg");
+  background-size: cover;
+  transition: all linear 0.2s;
+  margin: 0 auto 10px;
+}
+#landing #front .profile div div #foto:hover {
+  width: 250px;
+  height: 250px;
+  border-radius: 1%;
+  border: 1px solid #343434;
+  transition-delay: 1s;
+}
+#landing #front .profile div div p {
+  font-size: 1.9rem;
+  line-height: 1.2;
+}
+#landing #front .profile div div p:hover {
+  font-style: italic;
+}
+#landing .social {
+  text-align: center;
+}
+#landing .social div {
+  height: 100px;
+}
+#landing .social div a {
+  color: #2c2c2c;
+  font-size: 2.6rem;
+  width: 110px;
+  background-color: transparent;
+  transition: all linear 0.2s;
+}
+#landing .social div a:hover {
+  color: #f9f9f9;
+  text-shadow: 0px 0px 3px #2c2c2c;
+}
+#landing #projects {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#landing #projects .project {
+  height: 400px;
+}
+#landing #projects .project a {
+  width: 100%;
+  display: block;
+}
+#landing #contact {
+  background: url("../img/kite.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+#landing #contact > article {
+  height: 100vh;
+}
+#landing #contact h2 {
+  text-align: center;
+}
+#landing #contact form {
+  width: 90%;
+  max-width: 500px;
+}
+#landing #contact form div div:first-child {
+  padding-right: 2px;
+}
+#landing #contact form div div:last-child {
+  padding-left: 2px;
+}
+#landing #contact form input:not([type="submit"]) {
+  background-color: rgba(255,255,255,0.7);
+}
+#landing #contact form textarea {
+  width: 100%;
+  resize: vertical;
+  resize: none;
+  background-color: rgba(255,255,255,0.7);
+}
+#landing #footer {
+  background: #303437;
+  text-align: center;
+  color: #1d1e20;
+}
+#landing #footer ul a {
+  font-size: 2.5rem;
+  padding: 40px 25px 10px;
+}
+#landing #footer ul a:hover {
+  color: #303437;
+  text-shadow: 0px 0px 3px #f2f2f2;
+}
+#landing #footer p {
+  padding: 15px 0;
+  text-align: center;
+  color: #a5a5a5;
+  font-family: 'roboto300';
 }

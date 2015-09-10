@@ -1,45 +1,36 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        concat: {
-            css: {
-                src: [
-                    '../Public/css/rcat.min.css',
-                    'Template/css/*',
-                    'landing/css/*'
-                ],
-                dest: 'Template/css/lesli.css'
-            },
-            js: {
-                src: [
-                    '../Public/js/jquery.min.js',
-                    '../Public/js/slider.min.js',
-                    'Template/js/*',
-                    'landing/js/*'
-                ],
-                dest: 'Template/js/lesli.js'
-            }
-        },
-        cssmin: {
-            css: {
-                src: 'Template/css/lesli.css',
-                dest: 'Template/css/lesli.min.css'
-            }
-        },
-        //Minify JavaScript files
-        uglify: {
-            js: {
-                files: {
-                    'combined.js': ['lesli.min.js']
+        stylus:{
+            compile:{
+                options:{ 'compress': false },
+                files:{
+                    'Template/css/generic.css' : 'Template/css/generic.styl',
+                    'landing/css/landing.css' : 'landing/css/landing.styl'
                 }
             }
         },
+        concat: {
+            landing: {
+                src:['../Public/css/rcat.min.css',
+                     'Template/css/generic.css',
+                     'landing/css/landing.css'],
+                dest:'landing/css/landing.dev.css'
+            },
+            landingjs: {
+                src:['../Public/js/jquery.min.js',
+                     '../Public/js/slider.min.js',
+                     'landing/js/landing.js'],
+                dest:'landing/js/landing.min.js'
+            }
+        },
+        cssmin:{
+            landing: { src: 'landing/css/landing.dev.css', dest: 'landing/css/landing.min.css' }
+        }
     });
+    grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-css-url-replace');
-    //grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js', 'uglify:js']);
-    grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js']);
+    grunt.registerTask(
+        'default', ['stylus:compile','concat:landing','concat:landingjs','cssmin:landing']);
 };
