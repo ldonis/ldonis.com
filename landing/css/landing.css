@@ -128,3 +128,40 @@ html {
   color: #a5a5a5;
   font-family: 'roboto300';
 }
+/*
+*  MediaQueries
+*/
+@media screen and (max-width: 675px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  #front .profile {
+    background-position: center right;
+  }
+  #front .profile .rgrid div:first-child {
+    width: 100% !important;
+  }
+  #front #foto {
+    width: 175px;
+    height: 175px;
+  }
+  #front .profile_content {
+    width: 100%;
+  }
+  #front p {
+    font-family: 'roboto300';
+    background-color: rgba(210,210,210,0.3);
+  }
+  #front .social a {
+    font-size: 2.3rem;
+    width: 70px;
+    padding: 0px 13px;
+  }
+  #projects .header {
+    font-size: 1.4rem !important;
+  }
+  #footer ul a {
+    font-size: 2rem;
+    padding: 35px 10px;
+  }
+}

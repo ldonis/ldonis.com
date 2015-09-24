@@ -153,51 +153,58 @@ html
 
 /*
 *  MediaQueries
-* /
+*/
 @media screen and (max-width  675px)
 
-h2
-font-size 1.7rem
+    h2
+        font-size 1.7rem
+
+    /*
+    * Front content
+    */
+    #front
+
+        .profile
+            background-position center right
+
+            .rgrid
+                div:first-child
+                    width 100% !important
+
+        /*
+         *  Foto de perfil
+         */
+        #foto
+            width 175px
+            height 175px
 
 
-/*
-* Front content
-* /
-#front .profile
-background-position center right
+        .profile_content
+            width 100%
 
+        /*
+         * Slogan
+         */
+        p
+            font-family 'roboto300'
+            background-color rgba(210,210,210,0.3)
 
-/*
-*  Foto de perfil
-* /
-#front #foto
-width 175px
-height 175px
+        /*
+         * iconos de redes sociales
+         */
+        .social
+            a
+                font-size 2.3rem
+                width 70px
+                padding 0px 13px
 
+    #projects
 
-#front .profile_content
-width 100%
+        .header
+            font-size 1.4rem !important
 
-
-/*
-* Slogan
-* /
-#front .profile_content p
-font-family 'roboto300'
-background-color rgba(210,210,210,0.3)
-
-
-/*
-* iconos de redes sociales
-* /
-#front .social a
-font-size 2.3rem
-width 70px
-padding 0px 13px
-
-
-#footer ul a
-font-size 2rem
-padding 35px 10px
-
-*/
+    #footer
+        ul
+            a
+                font-size 2rem
+                padding 35px 10px
