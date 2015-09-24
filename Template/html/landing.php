@@ -1,4 +1,4 @@
-    <!Doctype html>
+<!Doctype html>
 <html lang="<?php echo $lang ?>">
     <head>
     <meta charset="utf-8">
