@@ -1,210 +1,77 @@
-body
-html
-    height 100%
+@require '../../Template/css/variables.styl'
 
-#landing
+section
 
-    /*
-     * Front content
-     */
-    #front
+    &.full
         height 100vh
 
-        .profile
-            height calc(100% - 100px)
-            width 100%
-            background-image url('../img/software.jpg')
-            background-repeat no-repeat
-            background-size cover
-            background-position center center
-
-            div
-                text-align center
-                background-color transparent
-
-                div
-                    background-color inherit
-
-                    /*
-                     *  Foto de perfil
-                     */
-                    #foto
-                       width 220px
-                       height 220px
-                       display block
-                       border-radius 50%
-                       border 10px solid #343434
-                       background url('../img/ldonis.jpg')
-                       background-size cover
-                       transition all linear 0.2s
-                       margin 0 auto 10px
-
-                       &:hover
-                            width 250px
-                            height 250px
-                            border-radius 1%
-                            border 1px solid #343434
-                            transition-delay 1s
-
-                    /*
-                     * Slogan
-                     */
-                    p
-                        font-size 1.9rem
-                        line-height 1.2
-
-                        &:hover
-                            font-style italic
-
-    /*
-     * iconos de redes sociales
-     */
-    .social
-        text-align center
+    article
 
         div
-            height 100px
+            width 100%
 
-            a
-                color #2c2c2c
-                font-size 2.6rem
-                width 110px
-                background-color transparent
-                transition all linear 0.2s
+            hr
+                background gray-dark
+                height 1px
+                margin 0 auto
 
-                &:hover
-                    color #f9f9f9
-                    text-shadow 0px 0px 3px #2c2c2c
+            .rgrid
+                text-align center
 
-    /*
-     * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-     */
-    #projects
-        text-align center
-        background-color #f1f1f1
+                & > div
+                    vertical-align middle
 
-        .project
-            height 400px
-
-            a
-                width 100%
-                display block
-
-    /*
-     * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-     */
-    #contact
-        background url('../img/kite.jpg') no-repeat
-        background-position center bottom
-        background-size cover
-
-        > article
-            height 100vh
-
-        h2
+        ul
             text-align center
+            position absolute
+            padding 50px 0
 
-        form
-            width 90%
-            max-width 500px
+            li
 
-            div
+                a
+                    font-size 1.6 rem
+                    transition()
 
-                div
+                    &:hover
+                        color white
+                        text-shadow 0px 0px 2px gray-dark
 
-                    &:first-child
-                        padding-right 2px
 
-                    &:last-child
-                        padding-left 2px
+#portal
 
-            input:not([type="submit"])
-                background-color rgba(255,255,255,0.7)
+    article
 
-            textarea
-                width 100%
-                resize vertical
-                resize none
-                background-color rgba(255,255,255,0.7)
+        hr
+            width 80%
 
-    /*
-     * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-     */
-    #footer
-        background #303437
-        text-align center
-        color #1D1E20
+        #foto
+            display block
+            width 150px
+            height 150px
+            margin 0 auto
+            border-radius 50%
+            background-image url('../img/ldonis.jpg')
+            background-size cover
+            border 3px solid gray-dark
 
-        ul a
-            font-size 2.5rem
-            padding 40px 25px 10px
-
-            &:hover
-                color #303437
-                text-shadow 0px 0px 3px #f2f2f2
-
-        p
-            padding 15px 0
-            text-align center
-            color #a5a5a5
-            font-family 'roboto300'
-
+#about
+    background-color gray-soft
 
 
 /*
-*  MediaQueries
-*/
-@media screen and (max-width  675px)
+ *  MediaQueries
+ */
+@media screen and (max-width  480px)
 
-    h2
-        font-size 1.7rem
+    section
 
-    /*
-    * Front content
-    */
-    #front
+        article
 
-        .profile
-            background-position center right
+            div
 
-            .rgrid
-                div:first-child
-                    width 100% !important
+                .rgrid div
+                    min-width 320px
 
-        /*
-         *  Foto de perfil
-         */
-        #foto
-            width 175px
-            height 175px
-
-
-        .profile_content
-            width 100%
-
-        /*
-         * Slogan
-         */
-        p
-            font-family 'roboto300'
-            background-color rgba(210,210,210,0.3)
-
-        /*
-         * iconos de redes sociales
-         */
-        .social
-            a
-                font-size 2.3rem
-                width 70px
-                padding 0px 13px
-
-    #projects
-
-        .header
-            font-size 1.4rem !important
-
-    #footer
-        ul
-            a
-                font-size 2rem
-                padding 35px 10px
+                    &:first-child
+                    &:last-child
+                        display none
