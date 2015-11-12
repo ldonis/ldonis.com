@@ -1,21 +1,21 @@
 <?php
 /*
- * Website info 
+ * Website info
  */
-Configure::write('info', array( 
-    'name' => 'ldonis.com', 
-    'description' => 'My amazing website', 
-    'version' => '1.0.0', 
-    'env' => 'dev' 
-)); 
- 
+Configure::write('info', array(
+    'name' => 'ldonis.com',
+    'description' => 'My amazing website',
+    'version' => '1.0.0',
+    'env' => 'dev'
+));
+
 /*
- * Plantillas 
+ * Plantillas
  */
-Configure::write('template', array( 
-    'default' => 'default', 
-)); 
- 
+Configure::write('template', array(
+    'default' => 'default',
+));
+
 /*
  *  Lenguages disponibles
  */
@@ -35,5 +35,5 @@ Configure::write('libs', array(
  * Variables
  */
 Configure::write('vars', array(
-    'webtitle' => 'Lesli | PHP Web framework'
+    'webtitle' => 'Luis Gdonis | Software Developer'
 ));

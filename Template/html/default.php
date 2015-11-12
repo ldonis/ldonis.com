@@ -13,6 +13,8 @@
     } else {
         
         echo
+        "\n" . $html->js('jquery.min', 'public') .
+        "\n" . $html->js('typed.min', 'template') .
         "\n" . $html->css('rcat.min','public') .
         "\n" . $html->css('generic','template') .
         "\n" . $html->css($website);
@@ -20,7 +22,18 @@
     }
 
 ?>
-
+    <script>
+        $(function(){
+            $("#slogan span").typed({
+                strings: [
+                    "software developer",
+                    "science lover",
+                    "a dreamer",
+                    "Luis Gdonis"],
+                typeSpeed: 0
+            });
+        });
+    </script>
 </head>
 <body>
 <?php

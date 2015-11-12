@@ -1,10 +1,10 @@
-<section id="portal" class="full">
+<section id="portal">
 
     <article class="center vertical">
 
         <div>
-            
-            <div class="rgrid columns-03">
+
+            <div class="rblock columns-03">
 
                 <div><hr></div>
 
@@ -18,11 +18,8 @@
 
             </div>
 
-            Hello, I'm software developer
-            Hello, I'm science lover
-            Hello, I'm a dreamer
-            Hello, I'm Luis Gdonis
-            
+            <p id="slogan">Hello, I'm <span></span></p>
+
         </div>
 
     </article>
@@ -31,35 +28,69 @@
 
 <section id="about">
 
-    <article class="rgrid columns-03">
+    <article id="dev">
 
-        <div>
-            <h2>I really love my work</h2>
-            <p>
-                I'm software developer since five years ago,
-                at that time I learned how magical the software can be.
-                From fix a little bug to build a bigger system;
-                Everything is a symphony of code and logical reasoning
-                embodied in a small file compiled.
-            </p>
-        </div>
+        <h2>I really love my work</h2>
+        <p>
+            I'm software developer since five years ago,
+            in that time I learned how magical the software can be,
+            from fixing a little bug to build a bigger system;
+            Everything is a symphony of code and logical reasoning
+            embodied in a small file compiled.
+        </p>
 
+            <?php
+            /*
         <div>
             <h2>Science was my first love</h2>
         </div>
-
-        <div>
-        </div>
+             */
+            ?>
 
     </article>
 
 </section>
 
 <section id="projects">
-    mis proyectos
+
+    <h2>My projects</h2>
+
+    <a id="lesli" href="http://lesli.ldonis.com" class="rblock columns-02">
+
+        <div>
+            <?php echo $html->img('lesli-logo.png'); ?>
+            <h3>Lesli</h3>
+        </div>
+
+        <div>
+            Lesli is a PHP web framework to build static websites, providing a
+            logical directories structure and a good collection of helpers and
+            too many more great features.
+        </div>
+
+    </a>
+
+    <a id="rcat" href="http://responsivecat.com" class="rblock columns-02">
+
+        <div>
+            Responsive Cat is a mobile-first micro framework allowing to write
+            clear code and syntactically according to the standards, with a lot
+            of plugins and modules to make the markup task easy and efficiently.
+        </div>
+
+        <div>
+            <?php echo $html->img('rcat-logo_notxt.png'); ?>
+            <h3>Responsive Cat</h3>
+        </div>
+
+    </a>
+
+    <article id="nautilus">
+    </article>
+
 </section>
 
-<section contact>
-    little form contact 
+<section id="contact">
+    little form contact
     <?php include 'social.php'; ?>
 </section>
