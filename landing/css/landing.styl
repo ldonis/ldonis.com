@@ -55,7 +55,23 @@
 #about
     background-color #f1f1f1
 
-    article
+    h2
+    p
+        display block
+        width 100%
+        max-width 600px
+        background transparent
+
+    /* Titulos de contenedores
+     * ================================== */
+    h2
+        text-align center
+
+    p
+        text-align justify
+        font-size 1.3rem
+
+    #dev
         background-image url('../img/dev_desk.png')
         background-size 500px
         background-repeat no-repeat
@@ -63,21 +79,162 @@
         padding 150px 3%
         width 100%
 
-        h2
-        p
-            display block
+    #science
+        padding 150px 3%
+
+        div
+            vertical-align middle
+
+        // ~ · ~  ~ · ~  ~ · ~
+        // Atomo animado
+        // ~ · ~  ~ · ~  ~ · ~
+        #atom_content
+            position relative
+            min-height 140px
+            z-index 99
             width 100%
-            max-width 600px
-            background transparent
 
-        /* Titulos de contenedores
-         * ================================== */
-        h2
-            text-align center
+            .atom
+                margin 0 auto
+                cursor pointer
+                background-color transparent
+                transition all linear 0.2s
 
-        p
-            text-align justify
-            font-size 1.3rem
+                [class*="electron"]
+                .proton
+                    bottom 0
+                    left 0
+                    margin auto
+                    position absolute
+                    right 0
+
+                .proton
+                    background #1b1b1b
+                    border-radius 50%
+                    box-shadow 0 0 20px rgba(0, 0, 0, 0.3)
+                    height 25px
+                    width 25px
+                    box-shadow 0 0 10px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.3)
+                    transition all 0.2s transform ease-in-out
+                    top -18px
+
+                &:hover .proton
+                    /*transform translate(0, 0.1em)*/
+                    height 20px
+                    width 20px
+                    background-color #ff7118
+
+
+                [class*="electron"]
+                    animation glow 3s linear infinite
+                    border-radius 50%
+                    border 0.4em solid rgba(50, 50, 50, 0.8)
+                    border-top 0.70em solid rgba(50, 50, 50, 0.8)
+                    border-bottom 0.70em solid rgba(50, 50, 50, 0.8)
+                    box-shadow 0 0 1px rgba(50, 50, 50, 0.3), inset 0 0 2px rgba(50, 50, 50, 0.3)
+                    height 10em
+                    width 8em
+                    transition 1s transform ease-in-out
+
+                    div
+                        animation rotate 2s linear infinite
+                        border-radius 50%
+                        height 100%
+                        position relative
+                        width 100%
+                        background-color transparent
+
+                        &:after
+                            animation squash 0s linear infinite
+                            transform scale(2, 2)
+                            border-radius 50%
+                            content ''
+                            position absolute
+                            left 50%
+                            top -0.6em
+                            margin-left 0em
+                            opacity 1
+                            height 1.0em
+                            width 1.0em
+
+                .electron_1
+                    transform rotate(120deg) scale(0.333, 1)
+
+                    div:after
+                        background #2ecc71
+                        box-shadow 0 0 2px #2ecc71
+
+                        /*
+                        section.atomhover .electron_1
+                            border 0.6em solid rgba(50, 50, 50, 0.8)
+                            transform rotate(0deg) scale(0.33333, 0.33333) perspective(600px) rotateX(60deg)
+                        section.atomhover .electron_1 divafter
+                            animation none
+                            top -1.6em
+                            transform scale(1, 1)
+                        */
+
+                .electron_2
+                    transform rotate(240deg) scale(0.333, 1)
+
+                    div:after
+                        background #3498db
+                        box-shadow 0 0 2px #3498db
+
+                        /*
+                        section.atomhover .electron_2
+                            border 0.6em solid rgba(50, 50, 50, 0.8)
+                            transform rotate(0deg) scale(0.66667, 0.66667) perspective(600px) rotateX(60deg)
+                        section.atomhover .electron_2 divafter
+                            animation none
+                            top -1.6em
+                            transform scale(1, 1)
+                        */
+
+                .electron_3
+                    transform rotate(360deg) scale(0.333, 1)
+
+                    div:after
+                        background #e74c3c
+                        box-shadow 0 0 2px #e74c3c
+
+                        /*
+                        section.atomhover .electron_3
+                            border 0.6em solid rgba(50, 50, 50, 0.8)
+                            transform rotate(0deg) scale(1, 1) perspective(600px) rotateX(60deg)
+                        section.atomhover .electron_3 divafter
+                            animation none
+                            top -1.6em
+                            transform scale(1, 1)
+                        */
+
+
+            @keyframes {glow}
+                0%, 100% {
+                    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.3);
+                }
+                50% {
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.3);
+                }
+
+            @keyframes {rotate}
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+
+            @keyframes {squash}
+                0%,50%, 100% {
+                    transform: scale(1, 1);
+                    top: -2.6em;
+                }
+                25%, 75% {
+                    transform: scale(2, 1);
+                    top: -1.2em;
+                }
+
 #projects
     padding 50px 0
     margin 0 auto
