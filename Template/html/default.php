@@ -7,7 +7,8 @@
     if (ENV == 'live') {
 
         echo
-        $html->js() .
+        $html->js('jquery.min', 'public') .
+        $html->js('typed.min', 'template') .
         $html->css();
 
     } else {

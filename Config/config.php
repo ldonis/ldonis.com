@@ -6,7 +6,7 @@ Configure::write('info', array(
     'name' => 'ldonis.com',
     'description' => 'My amazing website',
     'version' => '1.0.0',
-    'env' => 'dev'
+    'env' => 'live'
 ));
 
 /*

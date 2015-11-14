@@ -26,6 +26,9 @@ module.exports = function (grunt) {
                 dest:'landing/css/landing.full.css'
             }
         },
+        cssmin: {
+            landing: { src: 'landing/css/landing.full.css', dest: 'landing/css/landing.min.css' }
+        },
 
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
         ///* Watcher tasks
