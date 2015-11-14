@@ -5,6 +5,8 @@
 
 ##### Versión 0.2.0
 
+Built with [Lesli](http://lesli.ldonis.com/) and [RCat](http://responsivecat.com/)
+
 ##### Licencia
 
 Todo el contenido esta sujeto a derechos de autor
