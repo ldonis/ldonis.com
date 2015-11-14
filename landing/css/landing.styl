@@ -57,6 +57,7 @@
 
     h2
     p
+        margin 0 auto
         display block
         width 100%
         max-width 600px
@@ -73,11 +74,15 @@
 
     #dev
         background-image url('../img/dev_desk.png')
-        background-size 500px
+        background-size 30%
         background-repeat no-repeat
-        background-position center right
+        background-position 95% center
         padding 150px 3%
         width 100%
+
+        div
+            width 50%
+
 
     #science
         padding 150px 3%
@@ -243,6 +248,7 @@
 
     #lesli
     #cat
+    #nautilus
         display block
         padding 50px 0px 100px
 
@@ -307,8 +313,53 @@
                     -webkit-animation-iteration-count 1
                     animation-iteration-count 1
 
-#contact
-    background-color #555555
+    #nautilus
+
+        div:last-child
+            text-align justify
+
+        div
+            padding 50px 25px
+            text-align center
+            vertical-align middle
+            font-size 1.2rem
+
+            img
+                width 100px
+
+            h3
+                font-size 2.8rem
+                font-family 'roboto100'
+
+        &:hover
+            div
+                img
+                    -webkit-animation swing 1s ease
+                    animation swing 1s ease
+                    -webkit-animation-iteration-count 1
+                    animation-iteration-count 1
+
+@media screen and (max-width  800px)
+    #about
+        #dev
+            background-size 200px
+            background-position center 50px !important
+
+            div
+                margin-top 100px
+                width 100%
+
+@media screen and (max-width  600px)
+    #science
+        & > div
+            display block
+            width 100%
+
+    #projects
+        a
+            div
+                display block
+                width 100%
 
 .typed-cursor{
     opacity: 1;

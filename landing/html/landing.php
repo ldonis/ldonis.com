@@ -30,14 +30,16 @@
 
     <article id="dev">
 
-        <h2>I really love my work</h2>
-        <p>
-            I'm software developer since five years ago,
-            in that time I learned how magical the software can be,
-            from fixing a little bug to build a bigger system;
-            Everything is a symphony of code and logical reasoning
-            embodied in a small file compiled.
-        </p>
+        <div>
+            <h2>I truly love my work</h2>
+            <p>
+                Having worked as a software developer for the past five years;
+                I've discovered how magical it can be,
+                from adjusting a little bug to building a larger, more sophisticated system;
+                Everything is an elegant symphony composed of code and logical
+                reasoning embodied in a little compiled file.
+            </p>
+        </div>
 
     </article>
 
@@ -113,12 +115,38 @@
 
     </a>
 
-    <article id="nautilus">
+    <a id="nautilus" href="#" class="rblock columns-02">
+
+        <div>
+            <?php echo $html->img('nautilus-logo.png'); ?>
+            <h3>Nautilus</h3>
+        </div>
+
+        <div>
+            API REST for modern apps<br>
+            <small>Comming soon...</small>
+        </div>
+
+    </a>
+
+</section>
+
+<!--
+Aun no esta lista la api de Lesli para utilizar esta funcionalidad
+<section id="blog">
+
+    <h2><a href="http://blog.ldonis.com">Articles from my blog</a></h2>
+
+    <article>
+
+        <div>
+
+            <h3>post title</h3>
+            post excerpt
+
+        </div>
+
     </article>
 
 </section>
-
-<section id="contact">
-    little form contact
-    <?php include 'social.php'; ?>
-</section>
+-->

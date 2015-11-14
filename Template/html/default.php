@@ -5,13 +5,13 @@
     $html->head();
 
     if (ENV == 'live') {
-        
+
         echo
         $html->js() .
         $html->css();
-         
+
     } else {
-        
+
         echo
         "\n" . $html->js('jquery.min', 'public') .
         "\n" . $html->js('typed.min', 'template') .
@@ -30,7 +30,8 @@
                     "science lover",
                     "a dreamer",
                     "Luis Gdonis"],
-                typeSpeed: 0
+                typeSpeed: 0,
+                backDelay: 1300
             });
         });
     </script>
@@ -45,6 +46,8 @@
     echo '</div>';
 
     include $content;
+
+    include $this->template('footer');
 
 ?>
 </body>

@@ -52,6 +52,7 @@
 }
 #about h2,
 #about p {
+  margin: 0 auto;
   display: block;
   width: 100%;
   max-width: 600px;
@@ -66,11 +67,14 @@
 }
 #about #dev {
   background-image: url("../img/dev_desk.png");
-  background-size: 500px;
+  background-size: 30%;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 95% center;
   padding: 150px 3%;
   width: 100%;
+}
+#about #dev div {
+  width: 50%;
 }
 #about #science {
   padding: 150px 3%;
@@ -305,7 +309,8 @@
   max-width: 1100px;
 }
 #projects #lesli,
-#projects #cat {
+#projects #cat,
+#projects #nautilus {
   display: block;
   padding: 50px 0px 100px;
 }
@@ -362,8 +367,47 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-#contact {
-  background-color: #555;
+#projects #nautilus div:last-child {
+  text-align: justify;
+}
+#projects #nautilus div {
+  padding: 50px 25px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+#projects #nautilus div img {
+  width: 100px;
+}
+#projects #nautilus div h3 {
+  font-size: 2.8rem;
+  font-family: 'roboto100';
+}
+#projects #nautilus:hover div img {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+@media screen and (max-width: 800px) {
+  #about #dev {
+    background-size: 200px;
+    background-position: center 50px !important;
+  }
+  #about #dev div {
+    margin-top: 100px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #science > div {
+    display: block;
+    width: 100%;
+  }
+  #projects a div {
+    display: block;
+    width: 100%;
+  }
 }
 .typed-cursor {
   opacity: 1;

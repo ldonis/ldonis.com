@@ -2,15 +2,19 @@
  *  Fuentes
  */
 @font-face
-        font-family 'roboto300'
-        src url('../../../Public/font/roboto300.woff') format('woff')
-        font-weight 300
+    font-family 'roboto100'
+    src url('../../../Public/font/roboto100.woff') format('woff')
+    font-weight 100
+@font-face
+    font-family 'roboto300'
+    src url('../../../Public/font/roboto300.woff') format('woff')
+    font-weight 300
 
 @font-face
-        font-family 'pinyon'
-        src url('../../../Public/font/pinyon.woff') format('woff')
-        font-weight 100
-/*
+    font-family 'pinyon'
+    src url('../../../Public/font/pinyon.woff') format('woff')
+    font-weight 100
+
 @font-face
     font-family 'fontello'
     src url('../../Template/font/fontello/fontello.eotO?21141559')
@@ -20,7 +24,7 @@
     url('../../Template/font/fontello/fontello.svg?21141559#fontello') format('svg')
     font-weight normal
     font-style normal
-*/
+
 html
 body
     font-family 'roboto300'
@@ -29,3 +33,56 @@ body
         position fixed
         top 5px
         left 0px
+
+
+footer
+    padding 25px 0 50px
+    color #d4d4d4
+    background-color #1d1d1d
+    text-align center
+    font-size 1.2rem
+    border-top 3px solid #0170BA
+
+    .copy
+        font-size 0.9rem
+
+    .rnav
+
+        a
+            font-size 2.2rem
+
+            &:hover
+                color #0170BA
+                transition()
+
+    .blue
+        color #0170BA
+
+    a:hover
+        text-decoration underline
+
+
+/*
+ *  Fontello
+ */
+[class^="icon-"]:before
+[class*=" icon-"]:before
+    font-family "fontello"
+    font-style normal
+    font-weight normal
+    speak none
+    display inline-block
+    text-decoration inherit
+    width 1em
+    margin-right .2em
+    text-align center
+    font-variant normal
+    text-transform none
+    line-height 1em
+    margin-left .2em
+
+.icon-code:before { content: '\e801'; } /* '' */
+.icon-docs:before { content: '\e80b'; } /* '' */
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-globe:before { content: '\e802'; } /* '' */
+.icon-github:before { content: '\e809'; } /* '' */
