@@ -1,6 +1,6 @@
 <section id="portal">
 
-    <article class="center vertical">
+    <article class="rcenter vertical">
 
         <div>
 
@@ -150,13 +150,13 @@ Aun no esta lista la api de Lesli para utilizar esta funcionalidad
 
 </section>
 -->
+
 <!--
-Aun no esta listo el modulo de formularios de RCat
 <section>
     <h2>Stay in touch</h2>
     <?php echo $html->form('mail/contact', array('class'=>'rform block')); ?>
         <input name="email" placeholder="Your email">
-        <textarea></textarea>
+        <textarea name="message"></textarea>
         <input type="submit" value="send">
     </form>
 </section>

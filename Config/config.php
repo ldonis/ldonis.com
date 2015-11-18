@@ -6,7 +6,7 @@ Configure::write('info', array(
     'name' => 'ldonis.com',
     'description' => 'My amazing website',
     'version' => '1.0.0',
-    'env' => 'live'
+    'env' => 'dev'
 ));
 
 /*
@@ -36,4 +36,13 @@ Configure::write('libs', array(
  */
 Configure::write('vars', array(
     'webtitle' => 'Luis Gdonis | Software Developer'
+));
+
+/*
+ * Mail configuration
+ */
+Configure::write('mail', array(
+    'send' => 'mail',
+    'to' => 'hello@ldonis.com',
+    'subject' => 'Lesli website notification'
 ));
