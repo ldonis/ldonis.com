@@ -42,7 +42,8 @@ Configure::write('vars', array(
  * Mail configuration
  */
 Configure::write('mail', array(
-    'send' => 'mail',
     'to' => 'hello@ldonis.com',
-    'subject' => 'Lesli website notification'
+    'send' => 'mail',
+    'subject' => 'Lesli website notification',
+    'redirect' => 'http://ldonis.com'
 ));

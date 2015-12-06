@@ -115,41 +115,66 @@
 
     </a>
 
-    <a id="nautilus" href="#" class="rblock columns-02">
+    <a id="rcatmail" href="<?php echo $html->url(''); ?>" class="rblock columns-02">
 
         <div>
-            <?php echo $html->img('nautilus-logo.png'); ?>
-            <h3>Nautilus</h3>
+            <img src="http://img.ldonis.net/rcat/rcatmail-logo.png" />
+            <h3>RCatmail</h3>
         </div>
 
         <div>
-            API REST for modern apps<br>
-            <small>Comming soon...</small>
+            Responsive email is a framework to build pretty and responsive emails
+            for too manu clients.
         </div>
 
     </a>
 
 </section>
 
-<!--
-Aun no esta lista la api de Lesli para utilizar esta funcionalidad
 <section id="blog">
 
-    <h2><a href="http://blog.ldonis.com">Articles from my blog</a></h2>
-
-    <article>
-
-        <div>
-
-            <h3>post title</h3>
-            post excerpt
-
-        </div>
-
+    <p id="title">Sometimes I write about things I like</p>
+    <?php /*
+    <script>
+        (function() {
+            var blogAPI = "http://blog.ldonis.com/api/blog/posts/";
+            $.getJSON( blogAPI)
+                .done(function( data ) {
+                    //console.log(data);
+                    var blogUrl = data.blog.url;
+                    $.each( data.posts, function( i, item ) {
+                        console.log(item);
+                        $( "<img>" ).attr( "src", item.image ).appendTo( "#posts" );
+                        $('#posts').append('<h4>' + item.title + '</h4>');                        
+                        $('#posts').append('<span>' + item.date + '</span>');
+                        $('#posts').append(item.excerpt);
+                        
+                    });
+                });
+            })();
+    </script>
+    */ ?>
+    <article id="posts" class="rgrid columns-03">
+        <?php
+        
+        $posts = json_decode(file_get_contents('http://blog.ldonis.com/api/blog/posts/'));
+        $posts = $posts->posts;
+        
+        foreach($posts as $key => $post){
+            
+            echo '<div>';
+                echo '<h4>' . $post->title . '</h4>';
+                echo '<img src="' . $post->image . '">';
+                echo '<p>' . $post->excerpt . '</p>';
+            echo '</div>';
+            
+        
+        }
+        
+        ?>
     </article>
 
 </section>
--->
 
 <!--
 <section>
