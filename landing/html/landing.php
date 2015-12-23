@@ -123,8 +123,7 @@
         </div>
 
         <div>
-            Responsive email is a framework to build pretty and responsive emails
-            for too manu clients.
+            rCatmail is a framework to build pretty and responsive emails compatible with almost all email client.
         </div>
 
     </a>
