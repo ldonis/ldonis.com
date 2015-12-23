@@ -1,4 +1,4 @@
-<img alt"ldonis-logo" src="http://img.ldonis.net/ldonis/ldonis-logo.svg" width="200px">
+<img alt"ldonis-logo" src="http://img.ldonis.net/ldonis/ldonis-logo.svg" width="125px">
 
 #### Mi sitio web oficial [http://ldonis.com](http://ldonis.com/)
 ---
