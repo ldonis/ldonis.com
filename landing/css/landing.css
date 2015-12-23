@@ -310,9 +310,9 @@
 }
 #projects #lesli,
 #projects #cat,
-#projects #nautilus {
+#projects #rcatmail {
   display: block;
-  padding: 50px 0px 100px;
+  padding: 100px 0px 125px;
 }
 #projects h2,
 #projects h3 {
@@ -320,6 +320,12 @@
 }
 #projects h2 {
   padding-top: 25px;
+}
+#projects h3 {
+  margin: 30px auto;
+}
+#projects #lesli div:first-child {
+  line-height: 1px;
 }
 #projects #lesli div:last-child {
   text-align: justify;
@@ -354,6 +360,7 @@
 }
 #projects #rcat div:last-child {
   text-align: center;
+  line-height: 1px;
 }
 #projects #rcat div:last-child img {
   width: 220px;
@@ -366,6 +373,9 @@
   animation: swing 1s ease;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+#projects #rcatmail div:first-child {
+  line-height: 1px;
 }
 #projects #rcatmail div:last-child {
   text-align: justify;
@@ -389,54 +399,23 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-#blog {
-  padding: 50px 0 75px;
-  background-color: #fbfafa;
+#contact {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #efefef;
 }
-#blog #title {
-  font-size: 1.6rem;
+#contact div {
   text-align: center;
 }
-#blog div {
-  text-align: center;
-  padding: 30px;
-  vertical-align: top;
-/*
-        margin 60px auto 10px
-        width 100%
-        max-width 850px
-        padding 10px 10px 50px
-        */
+#contact div a {
+  padding: 5px 0px;
 }
-#blog div img {
-  padding: 6px 10px 0;
-  width: 100%;
-  max-width: 225px;
+#contact div a i {
+  font-size: 2.2rem;
 }
-#blog div h4 {
-  font-size: 1.4rem;
+#contact div a span {
+  display: block;
 }
-#blog div p {
-  text-align: justify;
-  font-size: 1.2rem;
-}
-/*        display auto
-        margin 60px auto 10px
-
-    span
-        display block
-        margin 10px auto
-        width 250px
-        text-align center
-        border-bottom 1px solid #3498DB
-
-    p
-        width 100%
-        max-width 900px
-        margin 0 auto
-        font-size 1.2rem
-        text-align justify
-*/
 @media screen and (max-width: 800px) {
   #about #dev {
     background-size: 200px;

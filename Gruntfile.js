@@ -10,8 +10,7 @@ module.exports = function (grunt) {
                 options:{ 'compress': false },
                 files:{
                     'Template/css/generic.css' : 'Template/css/generic.styl',
-                    'landing/css/landing.css' : 'landing/css/landing.styl',
-                    'cv/css/cv.css' : 'cv/css/cv.styl'
+                    'landing/css/landing.css' : 'landing/css/landing.styl'
                 }
             }
         },
@@ -25,17 +24,10 @@ module.exports = function (grunt) {
                      'Template/css/generic.css',
                      'landing/css/landing.css'],
                 dest:'landing/css/landing.full.css'
-            },
-        cv: {
-                src:['../Public/css/rcat.min.css',
-                     'Template/css/generic.css',
-                     'cv/css/cv.css'],
-                dest:'landing/css/landing.full.css'
             }
         },
         cssmin: {
-            landing: { src: 'landing/css/landing.full.css', dest: 'landing/css/landing.min.css' },
-            cv: { src: 'cv/css/cv.full.css', dest: 'cv/css/cv.min.css' }
+            landing: { src: 'landing/css/landing.full.css', dest: 'landing/css/landing.min.css' }
         },
 
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
@@ -44,8 +36,7 @@ module.exports = function (grunt) {
         watch: {
             stylus:{
                 files: ['Template/css/generic.styl',
-                        'landing/css/landing.styl',
-                        'cv/css/cv.styl'],
+                        'landing/css/landing.styl'],
                 tasks: ['stylus:compile']
             },
         },

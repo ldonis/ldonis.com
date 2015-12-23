@@ -131,58 +131,24 @@
 
 </section>
 
-<section id="blog">
+<section id="contact">
 
-    <p id="title">Sometimes I write about things I like</p>
-    <?php /*
-    <script>
-        (function() {
-            var blogAPI = "http://blog.ldonis.com/api/blog/posts/";
-            $.getJSON( blogAPI)
-                .done(function( data ) {
-                    //console.log(data);
-                    var blogUrl = data.blog.url;
-                    $.each( data.posts, function( i, item ) {
-                        console.log(item);
-                        $( "<img>" ).attr( "src", item.image ).appendTo( "#posts" );
-                        $('#posts').append('<h4>' + item.title + '</h4>');                        
-                        $('#posts').append('<span>' + item.date + '</span>');
-                        $('#posts').append(item.excerpt);
-                        
-                    });
-                });
-            })();
-    </script>
-    */ ?>
-    <article id="posts" class="rgrid columns-03">
-        <?php
-        
-        $posts = json_decode(file_get_contents('http://blog.ldonis.com/api/blog/posts/'));
-        $posts = $posts->posts;
-        
-        foreach($posts as $key => $post){
-            
-            echo '<div>';
-                echo '<h4>' . $post->title . '</h4>';
-                echo '<img src="' . $post->image . '">';
-                echo '<p>' . $post->excerpt . '</p>';
-            echo '</div>';
-            
-        
-        }
-        
-        ?>
-    </article>
+    <h3>Contact me</h3>
 
+    <div class="rblock columns-03">
+
+        <a href="https://github.com/ldonis">
+            <i class="icon-github"></i>
+            <span>Github</span>
+        </a>
+        <a href="http://blog.ldonis.com">
+            <i class="icon-code"></i>
+           <span>blog</span>
+        </a>
+        <a href="mailto:hello@ldonis.com">
+            <i class="icon-mail"></i>
+            <span>mail</span>
+        </a>
+
+    </div>
 </section>
-
-<!--
-<section>
-    <h2>Stay in touch</h2>
-    <?php echo $html->form('mail/contact', array('class'=>'rform block')); ?>
-        <input name="email" placeholder="Your email">
-        <textarea name="message"></textarea>
-        <input type="submit" value="send">
-    </form>
-</section>
--->

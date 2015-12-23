@@ -1,6 +1,7 @@
 <!Doctype html>
 <html lang="<?php echo $weblang; ?>">
     <head>
+        <meta name="google-site-verification" content="gCmI2dPpWr6uwVTnM9OWxaFUPehb9LrCP9l7ZMxImEQ" />
     <?php
     $html->head();
 
@@ -41,15 +42,14 @@
 <?php
 
     echo '<div class="lang_content">';
-        echo $html->menu(
-            array( 'lang' => array('text'=>'<i class="icon-globe"></i>' )),
-            array( 'class'=>'rnav multi language' ));
+
     echo '</div>';
 
     include $content;
 
     include $this->template('footer');
 
+    echo $html->js('analytics', 'template');
 ?>
 </body>
 </html>

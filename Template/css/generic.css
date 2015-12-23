@@ -18,8 +18,7 @@
 }
 @font-face {
   font-family: 'fontello';
-  src: url("../../Template/font/fontello/fontello.eotO?21141559");
-  src: url("../../Template/font/fontello/fontello.eot?21141559#iefix") format('embedded-opentype'), url("../../Template/font/fontello/fontello.woff?21141559") format('woff'), url("../../Template/font/fontello/fontello.ttf?21141559") format('truetype'), url("../../Template/font/fontello/fontello.svg?21141559#fontello") format('svg');
+  src: url("../../Template/font/fontello/fontello.eot") format('embedded-opentype'), url("../../Template/font/fontello/fontello.woff") format('woff'), url("../../Template/font/fontello/fontello.ttf") format('truetype'), url("../../Template/font/fontello/fontello.svg") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,27 +33,14 @@ body .lang_content {
   left: 0px;
 }
 footer {
-  padding: 25px 0 50px;
+  padding: 25px 0;
   color: #d4d4d4;
   background-color: #1d1d1d;
   text-align: center;
-  font-size: 1.2rem;
   border-top: 3px solid #0170ba;
-}
-footer .copy {
-  font-size: 0.9rem;
-}
-footer .rnav a {
-  font-size: 2.2rem;
-}
-footer .rnav a:hover {
-  color: #0170ba;
 }
 footer .blue {
   color: #0170ba;
-}
-footer a:hover {
-  text-decoration: underline;
 }
 /*
  *  Fontello
@@ -83,6 +69,10 @@ footer a:hover {
   content: '\e80b';
 }
 /* '' */
+.icon-mail:before {
+  content: '\e803';
+}
+/* '' */
 .icon-heart:before {
   content: '\e800';
 }
