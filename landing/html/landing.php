@@ -103,9 +103,9 @@
     <a id="rcat" href="http://responsivecat.com" class="rblock columns-02">
 
         <div>
-            Responsive Cat is a mobile-first micro framework allowing to write
-            clear code and syntactically according to the standards, with a lot
-            of plugins and modules to make the markup task easy and efficiently.
+            Responsive Cat is a mobile-first CSS micro framework that allowing to write
+            clear and syntactically code according to the standards, built in modules 
+            and providing plugins to make the markup task easy and efficiently.
         </div>
 
         <div>
