@@ -1,4 +1,4 @@
-<img alt"ResponsiveCat" src="http://responsivecat.com/www/responsivecat.com/Template/img/rcat-logo_notxt.png" width="225px">
+<img alt"ldonis-logo" src="http://img.ldonis.net/ldonis/ldonis-logo.svg" width="200px">
 
 #### Mi sitio web oficial [http://ldonis.com](http://ldonis.com/)
 ---
