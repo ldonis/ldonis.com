@@ -14,6 +14,8 @@ Configure::write('info', array(
  */
 Configure::write('template', array(
     'default' => 'default',
+    'sitemap.xml' => 'seo',
+    'robots.txt' => 'seo'
 ));
 
 /*
