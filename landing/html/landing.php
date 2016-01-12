@@ -131,7 +131,7 @@
 </section>
 
 <section id="freelance">
-    <?php echo $html->link("I'm also available for freelance projects.", 'http://www.ldonis.com'); ?>
+    <?php echo $html->link("I'm also available for freelance projects.", 'http://www.ldonis.net'); ?>
 </section>
 
 <section id="contact">
