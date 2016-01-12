@@ -85,7 +85,7 @@
 
     <h2>My projects</h2>
 
-    <a id="lesli" href="http://lesli.ldonis.com" class="rblock columns-02">
+    <a id="lesli" href="http://www.lesliframework.com" class="rblock columns-02">
 
         <div>
             <?php echo $html->img('lesli-logo.png'); ?>
@@ -100,11 +100,11 @@
 
     </a>
 
-    <a id="rcat" href="http://responsivecat.com" class="rblock columns-02">
+    <a id="rcat" href="http://www.responsivecat.com" class="rblock columns-02">
 
         <div>
             Responsive Cat is a mobile-first CSS micro framework that allowing to write
-            clear and syntactically code according to the standards, built in modules 
+            clear and syntactically code according to the standards, built in modules
             and providing plugins to make the markup task easy and efficiently.
         </div>
 
@@ -115,7 +115,7 @@
 
     </a>
 
-    <a id="rcatmail" href="<?php echo $html->url(''); ?>" class="rblock columns-02">
+    <a id="rcatmail" href="http://www.responsivecat.com/mailw" class="rblock columns-02">
 
         <div>
             <img src="http://img.ldonis.net/rcat/rcatmail-logo.png" />
@@ -128,6 +128,10 @@
 
     </a>
 
+</section>
+
+<section id="freelance">
+    <?php echo $html->link("I'm also available for freelance projects.", 'http://www.ldonis.com'); ?>
 </section>
 
 <section id="contact">

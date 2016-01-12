@@ -399,6 +399,14 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+#freelance a {
+  display: block;
+  padding: 6rem 0;
+  text-align: center;
+  background-color: #3498db;
+  font-size: 2rem;
+  font-family: 'roboto100';
+}
 #contact {
   text-align: center;
   padding: 50px 0px;

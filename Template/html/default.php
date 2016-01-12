@@ -33,6 +33,7 @@
                     "a dreamer",
                     "Luis Gdonis"],
                 typeSpeed: 0,
+                startDelay: 1000,
                 backDelay: 1300
             });
         });
