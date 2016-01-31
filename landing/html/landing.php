@@ -88,7 +88,7 @@
     <a id="lesli" href="http://www.lesliframework.com" class="rblock columns-02">
 
         <div>
-            <?php echo $html->img('lesli-logo.png'); ?>
+            <img alt="Lesli logo" src="http://img.ldonis.net/lesli/lesli-logo-250.png">
             <h3>Lesli</h3>
         </div>
 
@@ -109,7 +109,7 @@
         </div>
 
         <div>
-            <?php echo $html->img('rcat-logo_notxt.png'); ?>
+            <img alt="RCat logo" src="http://img.ldonis.net/rcat/rcat-logo-notext-325.png">
             <h3>Responsive Cat</h3>
         </div>
 

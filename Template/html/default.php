@@ -2,6 +2,7 @@
 <html lang="<?php echo $weblang; ?>">
     <head>
         <meta name="google-site-verification" content="gCmI2dPpWr6uwVTnM9OWxaFUPehb9LrCP9l7ZMxImEQ" />
+        <title>ldonis | Software developer</title>
     <?php
     $html->head();
 
