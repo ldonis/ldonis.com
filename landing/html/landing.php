@@ -115,7 +115,7 @@
 
     </a>
 
-    <a id="rcatmail" href="http://www.responsivecat.com/mailw" class="rblock columns-02">
+    <a id="rcatmail" href="http://www.responsivecat.com/mail" class="rblock columns-02">
 
         <div>
             <img src="http://img.ldonis.net/rcat/rcatmail-logo.png" />
