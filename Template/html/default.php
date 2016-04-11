@@ -29,8 +29,8 @@
         $(function(){
             $("#slogan span").typed({
                 strings: [
-                    "software developer",
-                    "science lover",
+                    "a software developer",
+                    "a science lover",
                     "a dreamer",
                     "Luis Gdonis"],
                 typeSpeed: 0,

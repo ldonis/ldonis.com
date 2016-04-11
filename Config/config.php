@@ -49,3 +49,5 @@ Configure::write('mail', array(
     'subject' => 'Lesli website notification',
     'redirect' => 'http://ldonis.com'
 ));
+
+Configure::write('helpers', array('html','seo'));
