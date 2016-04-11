@@ -51,3 +51,10 @@ Configure::write('mail', array(
 ));
 
 Configure::write('helpers', array('html','seo'));
+
+/*
+ * Configuracion de red
+ */
+Configure::write('network', array(
+    'www' => true
+));
