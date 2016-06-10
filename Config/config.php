@@ -6,13 +6,14 @@ Configure::write('info', array(
     'name' => 'ldonis.com',
     'description' => 'My amazing website',
     'version' => '1.0.0',
-    'env' => 'live'
+    'env' => 'dev'
 ));
 
 /*
  * Plantillas
  */
 Configure::write('template', array(
+    'blog' => 'blog',
     'default' => 'default',
     'sitemap.xml' => 'seo',
     'robots.txt' => 'seo'
@@ -37,7 +38,9 @@ Configure::write('libs', array(
  * Variables
  */
 Configure::write('vars', array(
-    'webtitle' => 'Luis Gdonis | Software Developer'
+    'webtitle' => 'Luis Gdonis | Software Developer',
+    'blogwebtitle' => 'My personal blog &bull; ldonis',
+    'blogdescription' => 'Mi blog personal, mi escape, mis pensamientos...'
 ));
 
 /*
