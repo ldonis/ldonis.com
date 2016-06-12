@@ -27,8 +27,10 @@
 
 
     <article id="about">
-        <p>Software developer and science evangelist living in Guatemala</p>
+        <p>Software developer and science evangelist living in
+        <?php echo $html->link('<u>Guatemala</u>','http://visitguatemala.com/en',array('target'=>'blank')); ?></p>
     </article>
+
 
     <article id="blog">
 
@@ -135,8 +137,23 @@
 
     </article>
 
+    <article id="social">
+
+        <nav class="rnav">
+            <ul>
+                <li data-tooltip="community" class="facebook"><a href="#"><i class="icon-facebook"></i></a>
+                <li data-tooltip="follow me" class="twitter"><a href="#"><i class="icon-twitter"></i></a>
+                <li data-tooltip="my projects" class="github"><a href="#"><i class="icon-github"></i></a>
+                <li data-tooltip="listen to me" class="podcast"><a href="#"><i class="icon-podcast"></i></a>
+                <li data-tooltip="write me" class="mail"><a href="#"><i class="icon-mail"></i></a>
+                <li data-tooltip="read my blog" class="blog"><a href="#"><i class="icon-edit-1"></i></a>
+            </ul>
+        </nav>
+
+    </article>
+
     <article id="freelance">
         <?php echo $html->link("I'm also available for freelance projects", 'http://ldonis.net'); ?>
     </article>
-
+    
 </section>

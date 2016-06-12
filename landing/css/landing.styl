@@ -121,7 +121,7 @@
     // - grid container
     .rgrid
         width 100%
-        max-width 700px
+        max-width 720px
         margin 0px auto 150px
 
         // - project container
@@ -168,7 +168,41 @@
                             background-color $black
 
 
+// * Social links
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#social
+    background-color $blue-donis
+    text-align center
 
+    li
+        font-size 1.3rem
+
+        &::before
+            transition all linear .2s
+
+        &.facebook
+            background-color $gray
+            color $gray-dark
+
+        &.twitter
+            background-color $gray-dark
+            color $gray
+
+        &.github
+            background-color $gray
+            color $gray-dark
+
+        &.podcast
+            background-color $gray-dark
+            color $gray
+
+        &.mail
+            background-color $gray
+            color $gray-dark
+
+        &.blog
+            background-color $gray-dark
+            color $gray
 
 
 
@@ -181,7 +215,7 @@
         width 100%
         font-size 1.8rem
         color $gray-dark
-        padding 75px 0px
+        padding 90px 0px
         text-align center
         background url('../img/rocket.png'), $gray
         background-position 20% center
@@ -189,3 +223,7 @@
 
         &:hover
             text-decoration underline
+
+@media (max-width: 460px)
+    [data-tooltip]::before
+        display none !important
