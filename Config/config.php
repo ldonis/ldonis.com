@@ -61,3 +61,5 @@ Configure::write('helpers', array('html','seo'));
 Configure::write('network', array(
     'www' => true
 ));
+
+Configure::write('seo', true);

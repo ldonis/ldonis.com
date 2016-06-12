@@ -6,13 +6,13 @@ switch($website){
     case 'sitemap.xml' :
 
         http::header('xml');
-        $seo->sitemap();
+        $seo->sitemap(array('blog'));
         break;
 
     case 'robots.txt' :
 
         http::header('txt');
-        $seo->robotsTxt();
+        $seo->robots('txt');
         break;
 
 }
