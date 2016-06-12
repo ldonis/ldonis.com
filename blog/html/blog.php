@@ -1,5 +1,5 @@
 
-<section>
+<section class="blog">
 
     <?php
 

@@ -1,39 +1,29 @@
-@font-face
-    font-family 'pinyon'
-    src url('../../../Public/font/pinyon.woff') format('woff')
-    font-weight 100
 
-@font-face
-    font-family 'roboto300'
-    src url('../../../Public/font/roboto300.woff') format('woff')
-    font-weight 300
+/**
+ * Portada
+ * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+ * @author Luis Gdonis <http//ldonis.com>
+ * @since 4.0.0
+ */
 
-@font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello/fontello.eot?59030803');
-  src: url('../font/fontello/fontello.eot?59030803#iefix') format('embedded-opentype'),
-       url('../font/fontello/fontello.woff2?59030803') format('woff2'),
-       url('../font/fontello/fontello.woff?59030803') format('woff'),
-       url('../font/fontello/fontello.ttf?59030803') format('truetype'),
-       url('../font/fontello/fontello.svg?59030803#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// * Including standard and base styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require '../../Template/css/base'
 
-body
-    font-size 1.2rem
-    font-family roboto300
-
+// * Header
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 header
     background-color #F7F7F7
     text-align center
     color #333333
 
+    // title
     h1
         font-family 'pinyon'
         font-size 3.2rem
         padding 10px 0px 0px
 
+    // description (not showing on posts)
     p
         background-color #333333
         padding 25px 0px
@@ -41,10 +31,13 @@ header
         color #F7F7F7
 
 
-section
+// * blog container
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+section.blog
     background-color #FFF
     padding 75px 0px
 
+    // Every single post container
     article
         width 100%
         max-width 800px
@@ -85,6 +78,17 @@ section
                 font-size 0.9rem
                 float right
                 color #666
+
+// * Link to all post
+section.all-posts
+
+    a
+        display block
+        color $gray
+        font-size 1.5rem
+        padding 30px 0px
+        background-color $gray-dark
+        text-align center
 
 section.post-profile
     padding 0px
@@ -136,60 +140,7 @@ section.post-profile
                 text-align center
 
 section.post-comments
+    padding 50px 0px
     width 100%
     max-width 800px
     margin 0 auto
-
-footer
-    background-color #F7F7F7
-    padding 5px 0px
-
-    div
-        width 100%
-        max-width 800px
-        padding 5px 0px
-        margin 0 auto
-
-        h3
-            font-size 1.4rem
-
-        ul
-            text-align right
-
-            a
-                padding 0 !important
-                font-size 1.3rem
-
-i.icon-twitter
-    color #1DA1F2
-
-i.icon-facebook
-    color #3B5998
-
-
-/*
- *  Fontello
- */
-[class^="icon-"]:before
-[class*=" icon-"]:before
-    font-family "fontello"
-    font-style normal
-    font-weight normal
-    speak none
-    display inline-block
-    text-decoration inherit
-    width 1em
-    margin-right .2em
-    text-align center
-    font-variant normal
-    text-transform none
-    line-height 1em
-    margin-left .2em
-
-
-.icon-heart:before { content: '\e800'; } /* '' */
-.icon-github:before { content: '\e801'; } /* '' */
-.icon-twitter:before { content: '\e802'; } /* '' */
-.icon-arrow-right:before { content: '\e803'; } /* '' */
-.icon-arrow-left:before { content: '\e804'; } /* '' */
-.icon-facebook:before { content: '\e805'; } /* '' */
