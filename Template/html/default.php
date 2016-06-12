@@ -51,7 +51,10 @@
 
     include $this->template('footer');
 
-    echo $html->js('analytics', 'template');
+    if (ENV == 'live'){
+        echo $html->js('analytics', 'template');
+    }
+    
 ?>
 </body>
 </html>

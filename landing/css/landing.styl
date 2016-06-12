@@ -1,48 +1,191 @@
+
+@require '../../Template/css/base'
+
 /**
  * Portada
  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
  * @author Luis Gdonis <http//ldonis.com>
  * @since 4.0.0
  */
+
+// * Portal image
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 #portal
     height 100vh
+    text-align center
     background url('../img/solar.png')
     background-repeat no-repeat
     position center left
 
-    /* Grid container
-     * ================================== */
+    // * Main container
+    // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
     & > div
         width 100%
 
-        /* Slogan
-         * ================================== */
-        p
-            padding-top 5px
+    // * Grid container
+    // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+    .rgrid
+
+        & > div
+            vertical-align middle
+
+            // * Lineas de portal
+            // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+            hr
+                width 85%
+                height 1px
+                margin 0 auto
+                background $gray-dark
+
+            // * Foto de perfil
+            // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+            #foto
+                display block
+                width 150px
+                height 150px
+                margin 0 auto
+                border-radius 50%
+                background-image url('../img/ldonis.jpg')
+                background-size cover
+                border 3px solid $gray-dark
+
+    // * Slogan and about me
+    // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+    #slogan
+        padding-top 5px
+        color $gray-dark
+
+// * Some words about me
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#about
+    color $gray
+    background-color $gray-dark
+    padding 25px 0px
+    font-size 1.2rem
+    text-align center
+
+// * Some words about me
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#blog
+    padding-top 60px
+
+    h3
+        width 70%
+        font-size 1.6rem
+        text-align center
+        margin 0px auto 80px
+        border-bottom 1px solid $blue-donis
+
+    .post
+        width 100%
+        max-width 650px
+        margin 0 auto 75px
+
+        // - Titulo de post
+        h4
+            font-size 1.3rem
             text-align center
 
+        // - Extracto de post
+        p
+            text-align justify
+            color $gray-dark
 
-        .rblock
+            // - Link
+            a
+                font-size 0.9rem
+                padding 0 5px
+                font-style italic
+                color $gray-dark
 
-            & > div
-                vertical-align middle
+        // - Separador de posts
+        hr
+            width 100%
+            height 1px
+            margin-left 0px
+            background-color $gray
 
-                /* Lineas de portal
-                 * ================================== */
-                hr
-                    background #3d3d3d
-                    height 1px
-                    margin 0 auto
-                    width 85%
 
-                /* Foto de perfil
-                 * ================================== */
-                #foto
-                    display block
-                    width 150px
-                    height 150px
-                    margin 0 auto
-                    border-radius 50%
-                    background-image url('../img/ldonis.jpg')
-                    background-size cover
-                    border 3px solid #3d3d3d
+// * The projects that I'm working on
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#projects
+    text-align center
+
+    // - section title
+    h3
+        width 70%
+        margin 0px auto 100px
+        font-size 1.6rem
+        border-bottom 1px solid $blue-donis
+
+    // - grid container
+    .rgrid
+        width 100%
+        max-width 700px
+        margin 0px auto 150px
+
+        // - project container
+        div
+            vertical-align middle
+
+            // - project name
+            h4
+                font-size 1.3rem
+
+            // - project logo
+            img
+                height 150px
+
+            // - project description
+            p
+                text-align justify
+
+            // - links list container
+            ul
+                padding 0
+
+                // - single link container
+                li
+                    display inline-block
+                    width 49%
+                    font-size 0
+
+                    // - link
+                    a
+                        color $gray-dark
+                        background-color $gray
+                        border 1px solid $gray
+                        border-radius 3spx
+                        font-size 1rem
+                        transition all linear .2s
+
+                        &.website:hover
+                            color $gray
+                            background-color $blue-donis
+
+                        &.github:hover
+                            color $gray
+                            background-color $black
+
+
+
+
+
+
+// * Freelance link
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#freelance
+
+    a
+        display block
+        width 100%
+        font-size 1.8rem
+        color $gray-dark
+        padding 75px 0px
+        text-align center
+        background url('../img/rocket.png'), $gray
+        background-position 20% center
+        background-repeat no-repeat
+
+        &:hover
+            text-decoration underline

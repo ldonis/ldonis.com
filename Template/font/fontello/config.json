@@ -7,40 +7,88 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "bf882b30900da12fca090d9796bc3030",
-      "css": "mail",
-      "code": 59395,
-      "src": "fontawesome"
-    },
-    {
       "uid": "d73eceadda1f594cec0536087539afbf",
       "css": "heart",
       "code": 59392,
       "src": "fontawesome"
     },
     {
-      "uid": "7034e4d22866af82bef811f52fb1ba46",
-      "css": "code",
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github-round",
       "code": 59393,
       "src": "fontawesome"
     },
     {
-      "uid": "c8585e1e5b0467f28b70bce765d5840c",
-      "css": "docs",
-      "code": 59403,
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 59394,
       "src": "fontawesome"
     },
     {
-      "uid": "197375a3cea8cb90b02d06e4ddf1433d",
-      "css": "globe",
-      "code": 59394,
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "arrow-right",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "884cfc3e6e2d456dd2a2ca0dbb9e6337",
+      "css": "arrow-left",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 59397,
       "src": "fontawesome"
     },
     {
       "uid": "d94334f23acba022bfd68e49d76b31bb",
       "css": "github",
-      "code": 59401,
+      "code": 59398,
       "src": "entypo"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "6059b7737287728091ce7e4c600cca56",
+      "css": "edit",
+      "code": 59400,
+      "src": "elusive"
+    },
+    {
+      "uid": "5287c0dd80c29636f3d45b8b52cd3021",
+      "css": "podcast",
+      "code": 59401,
+      "src": "zocial"
+    },
+    {
+      "uid": "a19527dd18f0e45e597e8a2622604d14",
+      "css": "wifi",
+      "code": 59402,
+      "src": "typicons"
+    },
+    {
+      "uid": "91bac16b22827347e9ee20477f0b44d2",
+      "css": "mail",
+      "code": 59403,
+      "src": "linecons"
+    },
+    {
+      "uid": "41087bc74d4b20b55059c60a33bf4008",
+      "css": "edit-1",
+      "code": 59404,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "197375a3cea8cb90b02d06e4ddf1433d",
+      "css": "globe",
+      "code": 59405,
+      "src": "fontawesome"
     }
   ]
 }
