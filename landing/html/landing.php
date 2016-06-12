@@ -85,8 +85,8 @@
                     and too many more great features.
                 </p>
                 <ul class="rnav">
-                    <li><a href="http://lesliframework.com" class="website">website<i class="icon-globe"></i></a></li>
-                    <li><a href="https://github.com/LesliFramework/" class="github">github<i class="icon-github"></i></a></li>
+                    <li><a target="_blank" href="http://lesliframework.com" class="website">website<i class="icon-globe"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/LesliFramework/" class="github">github<i class="icon-github"></i></a></li>
                 </ul>
             </div>
 
@@ -106,8 +106,8 @@
                     to write clean and syntactically code according to the standards.
                 </p>
                 <ul class="rnav">
-                    <li><a href="http://responsivecat.com" class="website">website<i class="icon-globe"></i></a></li>
-                    <li><a href="https://github.com/ResponsiveCat/" class="github">github<i class="icon-github"></i></a></li>
+                    <li><a target="_blank" href="http://responsivecat.com" class="website">website<i class="icon-globe"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/ResponsiveCat/" class="github">github<i class="icon-github"></i></a></li>
                 </ul>
             </div>
 
@@ -128,8 +128,8 @@
                     the creative commons license.
                 </p>
                 <ul class="rnav">
-                    <li><a href="http://lesli5.com" class="website">website<i class="icon-globe"></i></a></li>
-                    <li><a href="https://github.com/Lesil5/" class="github">github<i class="icon-github"></i></a></li>
+                    <li><a target="_blank" href="http://lesli5.com" class="website">website<i class="icon-globe"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/Lesil5/" class="github">github<i class="icon-github"></i></a></li>
                 </ul>
             </div>
 
@@ -137,23 +137,6 @@
 
     </article>
 
-    <article id="social">
 
-        <nav class="rnav">
-            <ul>
-                <li data-tooltip="community" class="facebook"><a href="#"><i class="icon-facebook"></i></a>
-                <li data-tooltip="follow me" class="twitter"><a href="#"><i class="icon-twitter"></i></a>
-                <li data-tooltip="my projects" class="github"><a href="#"><i class="icon-github"></i></a>
-                <li data-tooltip="listen to me" class="podcast"><a href="#"><i class="icon-podcast"></i></a>
-                <li data-tooltip="write me" class="mail"><a href="#"><i class="icon-mail"></i></a>
-                <li data-tooltip="read my blog" class="blog"><a href="#"><i class="icon-edit-1"></i></a>
-            </ul>
-        </nav>
 
-    </article>
-
-    <article id="freelance">
-        <?php echo $html->link("I'm also available for freelance projects", 'http://ldonis.net'); ?>
-    </article>
-    
 </section>

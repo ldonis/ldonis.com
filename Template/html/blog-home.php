@@ -46,6 +46,7 @@ $posts = include $this->template('info.post','blog','');
 
         echo
             "\n" . $html->css('rcat.min','public') .
+            "\n" . $html->css('generic', 'Template') .
             "\n" . $html->css('blog');
 
     endif;
@@ -61,7 +62,8 @@ $posts = include $this->template('info.post','blog','');
 
     include $content;
 
-    include $this->template('blog.footer');
+    include $this->template('footer');
+    //include $this->template('blog.footer');
 
     if (ENV == 'live') :
         echo $html->js('bloganalytics','template');

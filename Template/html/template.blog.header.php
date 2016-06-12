@@ -1,12 +1,6 @@
 <header>
 
-    <h1><?php echo $html->link('ldonis','blog'); ?></h1>
+    <h1><?php echo $html->link('ldonis','/'); ?></h1>
+    <p>science <font size="3">&amp;</font> software</p>
 
-    <?php
-
-    if(!isset($LesliController['DATA_params'][0])){
-        echo '<p>science <font size="3">&amp;</font> software</p>';
-    }
-
-    ?>
 </header>

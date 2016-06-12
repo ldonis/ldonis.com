@@ -1,4 +1,8 @@
 
+<section class="all-posts">
+    <?php echo $html->link('- all my posts -','blog'); ?>
+</section>
+
 <section class="post-profile">
 
     <ul class="rnav">

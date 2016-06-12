@@ -49,6 +49,7 @@ $post = $posts[$postid];
 
         echo
             "\n" . $html->css('rcat.min','public') .
+            "\n" . $html->css('generic', 'Template') .
             "\n" . $html->css('blog');
 
     endif;
@@ -66,7 +67,7 @@ $post = $posts[$postid];
 
     include $this->template('blog.footer.post');
 
-    include $this->template('blog.footer');
+    include $this->template('footer');
 
     if (ENV == 'live') :
         echo $html->js('analytics','template');

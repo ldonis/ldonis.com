@@ -35,7 +35,8 @@
                     "Luis Gdonis"],
                 typeSpeed: 0,
                 startDelay: 1000,
-                backDelay: 1300
+                backDelay: 1300,
+                showCursor: false
             });
         });
     </script>
@@ -54,7 +55,7 @@
     if (ENV == 'live'){
         echo $html->js('analytics', 'template');
     }
-    
+
 ?>
 </body>
 </html>

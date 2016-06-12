@@ -1,12 +1,14 @@
 
-@require '../../Template/css/base'
-
 /**
  * Portada
  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
  * @author Luis Gdonis <http//ldonis.com>
  * @since 4.0.0
  */
+
+ // * Including standard and base styles
+ // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+ @require '../../Template/css/base'
 
 // * Portal image
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
@@ -166,64 +168,3 @@
                         &.github:hover
                             color $gray
                             background-color $black
-
-
-// * Social links
-// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-#social
-    background-color $blue-donis
-    text-align center
-
-    li
-        font-size 1.3rem
-
-        &::before
-            transition all linear .2s
-
-        &.facebook
-            background-color $gray
-            color $gray-dark
-
-        &.twitter
-            background-color $gray-dark
-            color $gray
-
-        &.github
-            background-color $gray
-            color $gray-dark
-
-        &.podcast
-            background-color $gray-dark
-            color $gray
-
-        &.mail
-            background-color $gray
-            color $gray-dark
-
-        &.blog
-            background-color $gray-dark
-            color $gray
-
-
-
-// * Freelance link
-// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-#freelance
-
-    a
-        display block
-        width 100%
-        font-size 1.8rem
-        color $gray-dark
-        padding 90px 0px
-        text-align center
-        background url('../img/rocket.png'), $gray
-        background-position 20% center
-        background-repeat no-repeat
-
-        &:hover
-            text-decoration underline
-
-@media (max-width: 460px)
-    [data-tooltip]::before
-        display none !important

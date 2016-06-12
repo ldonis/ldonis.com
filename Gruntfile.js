@@ -28,6 +28,7 @@ module.exports = function (grunt) {
             },
             blog: {
                 src:['../Public/css/rcat.min.css',
+                     'Template/css/generic.css',
                      'blog/css/blog.css'],
                 dest:'blog/css/blog.full.css'
             }
