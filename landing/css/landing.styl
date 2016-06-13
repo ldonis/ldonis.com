@@ -69,7 +69,7 @@
 // * Some words about me
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 #blog
-    padding-top 60px
+    padding 60px 20px 0px
 
     h3
         width 70%
@@ -112,6 +112,7 @@
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 #projects
     text-align center
+    padding 0px 20px
 
     // - section title
     h3
@@ -168,3 +169,21 @@
                         &.github:hover
                             color $gray
                             background-color $black
+
+
+@media (max-width: 425px)
+
+    // * Portal image
+    // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+    #portal
+
+        // * Grid container
+        // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+        .rgrid
+
+            & > div
+
+                // * Lineas de portal
+                // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+                hr
+                    display none

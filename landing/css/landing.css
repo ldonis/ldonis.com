@@ -45,7 +45,7 @@
   text-align: center;
 }
 #blog {
-  padding-top: 60px;
+  padding: 60px 20px 0px;
 }
 #blog h3 {
   width: 70%;
@@ -81,6 +81,7 @@
 }
 #projects {
   text-align: center;
+  padding: 0px 20px;
 }
 #projects h3 {
   width: 70%;
@@ -128,4 +129,9 @@
 #projects .rgrid div ul li a.github:hover {
   color: #f7f7f7;
   background-color: #1d1d1d;
+}
+@media (max-width: 425px) {
+  #portal .rgrid > div hr {
+    display: none;
+  }
 }
