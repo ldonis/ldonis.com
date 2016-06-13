@@ -1,12 +1,11 @@
-<img alt"ldonis-logo" src="http://img.ldonis.net/ldonis/ldonis-logo.svg" width="125px">
+<img alt"ldonis-logo" src="http://img.ldonis.net/ldonis/ldonis-logo.svg" width="80px">
 
-#### Mi sitio web oficial [http://ldonis.com](http://ldonis.com/)
+##### My personal website [http://ldonis.com](http://ldonis.com/)
 ---
-
-##### Versión 0.2.0
+_Versión 4.0.0_
 
 Built with [Lesli](http://lesli.ldonis.com/) and [RCat](http://responsivecat.com/)
 
-##### Licencia
+*Licencia*
 
 Todo el contenido esta sujeto a derechos de autor
