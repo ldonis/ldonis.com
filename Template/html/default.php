@@ -22,21 +22,7 @@
     }
 
 ?>
-    <script>
-        $(function(){
-            $("#slogan span").typed({
-                strings: [
-                    "a software developer",
-                    "a science lover",
-                    "a dreamer",
-                    "Luis Gdonis"],
-                typeSpeed: 0,
-                startDelay: 1000,
-                backDelay: 1300,
-                showCursor: false
-            });
-        });
-    </script>
+
 </head>
 <body>
 <?php
@@ -58,6 +44,31 @@
 
     }
 
-?>
+    if($website == 'landing'):
+
+    ?>
+    <script>
+        jQuery(document).ready(function(){
+
+        });
+
+            jQuery("#slogan span").typed({
+                strings: [
+                    "a software developer",
+                    "a science lover",
+                    "a dreamer",
+                    "Luis Gdonis"],
+                typeSpeed: 0,
+                startDelay: 1000,
+                backDelay: 1300,
+                showCursor: false
+            });
+
+    </script>
+    <?php
+
+    endif;
+
+    ?>
 </body>
 </html>
