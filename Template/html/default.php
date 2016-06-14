@@ -8,10 +8,7 @@
 
     if (ENV == 'live') {
 
-        echo
-        $html->js('jquery.min', 'public') .
-        $html->js('typed.min', 'template') .
-        $html->css();
+        echo $html->css();
 
     } else {
 
@@ -53,7 +50,12 @@
     include $this->template('footer');
 
     if (ENV == 'live'){
-        echo $html->js('analytics', 'template');
+
+        echo
+        $html->js('jquery.min', 'public') .
+        $html->js('typed.min', 'template') .
+        $html->js('analytics', 'template');
+
     }
 
 ?>
