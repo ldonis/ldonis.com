@@ -22,17 +22,17 @@ Configure::write('template', array(
 /*
  *  Lenguages disponibles
  */
-Configure::write('lang', array(
-    'es'=>'Español',
-    'en'=>'English'
-));
+//Configure::write('lang', array(
+//    'es'=>'Español',
+//    'en'=>'English'
+//));
 
 /*
  * Librerias a utilizar
  */
-Configure::write('libs', array(
-    'yamles'=>'ldonis/yamles'
-));
+//Configure::write('libs', array(
+//    'yamles'=>'ldonis/yamles'
+//));
 
 /*
  * Variables
