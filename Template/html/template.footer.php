@@ -28,10 +28,10 @@
     </article>
 
     <article id="freelance">
-        <?php echo $html->link("I'm also available for freelance projects", 'http://ldonis.net', array('target'=>'blank')); ?>
+        <?php echo $html->link("I'm available for freelance projects", 'http://ldonis.net', array('target'=>'blank')); ?>
     </article>
 
-<section>
+</section>
 
 <footer>
 

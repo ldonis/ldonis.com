@@ -6,7 +6,7 @@ Configure::write('info', array(
     'name' => 'ldonis.com',
     'description' => 'My amazing website',
     'version' => '4.0.0',
-    'env' => 'live'
+    'env' => 'dev'
 ));
 
 /*
@@ -22,17 +22,10 @@ Configure::write('template', array(
 /*
  *  Lenguages disponibles
  */
-//Configure::write('lang', array(
-//    'es'=>'Español',
-//    'en'=>'English'
-//));
-
-/*
- * Librerias a utilizar
- */
-//Configure::write('libs', array(
-//    'yamles'=>'ldonis/yamles'
-//));
+Configure::write('lang', array(
+    'en'=>'English',
+    'es'=>'Español'
+));
 
 /*
  * Variables
@@ -58,8 +51,6 @@ Configure::write('helpers', array('html','seo'));
 /*
  * Configuracion de red
  */
-Configure::write('network', array(
-    'www' => true
-));
+Configure::write('network', array('www' => true));
 
 Configure::write('seo', true);

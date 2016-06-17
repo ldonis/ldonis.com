@@ -18,8 +18,7 @@
 
             </div>
 
-            <p id="slogan">Hello, I'm <span></span></p>
-
+            <p id="slogan">Hello I'm <span></span></p>
 
         </div>
 
