@@ -4,7 +4,7 @@
  */
 Configure::write('info', array(
     'name' => 'ldonis.com',
-    'description' => 'My amazing website',
+    'description' => 'Software developer and science evangelist living in Guatemala',
     'version' => '4.0.0',
     'env' => 'live'
 ));
@@ -14,6 +14,7 @@ Configure::write('info', array(
  */
 Configure::write('template', array(
     'blog' => 'blog',
+    'feed' => 'blogfeed',
     'default' => 'default',
     'sitemap.xml' => 'seo',
     'robots.txt' => 'seo'
