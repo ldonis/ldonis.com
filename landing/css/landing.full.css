@@ -39,27 +39,15 @@ body {
 #social li::before {
   transition: all linear 0.2s;
 }
-#social li.facebook {
-  background-color: #f7f7f7;
-  color: #333;
-}
-#social li.twitter {
-  background-color: #333;
-  color: #f7f7f7;
-}
-#social li.github {
-  background-color: #f7f7f7;
-  color: #333;
-}
-#social li.podcast {
-  background-color: #333;
-  color: #f7f7f7;
-}
-#social li.mail {
-  background-color: #f7f7f7;
-  color: #333;
-}
+#social li.facebook,
+#social li.twitter,
 #social li.blog {
+  background-color: #f7f7f7;
+  color: #333;
+}
+#social li.github,
+#social li.podcast,
+#social li.mail {
   background-color: #333;
   color: #f7f7f7;
 }

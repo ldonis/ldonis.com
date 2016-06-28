@@ -42,14 +42,16 @@
 
         foreach($posts as $id => $post):
 
+            $post_url = 'blog' . DS . $id;
+
         ?>
 
             <div class="post">
-                <h4><?php echo $post['title']; ?></h4>
+                <h4><?php echo $html->link($post['title'], $post_url); ?></h4>
                 <p>
                 <?php
                     echo $post['date'] . ' - ' . substr($post['excerpt'],0,150);
-                    echo $html->link( ' - read more - ', 'blog' . DS . $id );
+                    echo $html->link( ' - read more - ', $post_url );
                 ?>
                 </p>
                 <hr>

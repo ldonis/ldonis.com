@@ -41,6 +41,7 @@ $posts = include $this->template('info.post','blog','');
     if (ENV == 'live') :
 
         echo $html->css();
+        $html->addJs($html->js('bloganalytics','template'));
 
     else :
 
@@ -63,11 +64,8 @@ $posts = include $this->template('info.post','blog','');
     include $content;
 
     include $this->template('footer');
-    //include $this->template('blog.footer');
 
-    if (ENV == 'live') :
-        echo $html->js('bloganalytics','template');
-    endif;
+    $html->includeJs();
 
 ?>
 </body>

@@ -7,21 +7,21 @@
                 <li data-tooltip="community" class="facebook">
                     <a target="blank" href="https://www.facebook.com/gtcoders">
                     <i class="icon-facebook"></i></a></li>
-                <li data-tooltip="follow me" class="twitter">
-                    <a target="blank" href="https://twitter.com/lgdonis">
-                    <i class="icon-twitter"></i></a></li>
                 <li data-tooltip="my projects" class="github">
                     <a target="blank" href="https://github.com/ldonis">
                     <i class="icon-github"></i></a></li>
-                <li data-tooltip="listen to me" class="podcast">
-                    <a target="blank" href="http://www.ivoox.com/">
-                    <i class="icon-podcast"></i></a></li>
+                <li data-tooltip="follow me" class="twitter">
+                    <a target="blank" href="https://twitter.com/lgdonis">
+                    <i class="icon-twitter"></i></a></li>
                 <li data-tooltip="write me" class="mail">
                     <a href="mailto:emc2@ldonis.com">
                     <i class="icon-mail"></i></a></li>
-                <li data-tooltip="read my blog" class="blog">
+                <li data-tooltip="read me" class="blog">
                     <a href="/blog">
                     <i class="icon-edit-1"></i></a></li>
+                <li data-tooltip="listen to me" class="podcast">
+                    <a target="blank" href="http://www.ivoox.com/">
+                    <i class="icon-podcast"></i></a></li>
             </ul>
         </nav>
 
