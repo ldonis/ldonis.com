@@ -5,13 +5,16 @@
 
     foreach($posts as $id => $post):
 
+        $post_url = $website . DS . $id;
+
     ?>
 
     <article class="blog-home">
 
         <div class="post-header">
 
-            <h2><?php echo $post['title']; ?></h2>
+            <h2><?php echo $html->link($post['title'], $post_url); ?></h2>
+            <?php echo $html->img( $id . '.jpg'); ?>
 
         </div>
 
@@ -22,7 +25,7 @@
         </div>
 
         <div class="post-footer">
-            <?php echo $html->link( 'Leer más...', $website . DS . $id ); ?>
+            <?php echo $html->link( 'Leer más...', $post_url ); ?>
             <p><?php echo $post['date']; ?></p>
         </div>
 

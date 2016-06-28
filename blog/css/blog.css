@@ -22,7 +22,7 @@ header p {
 }
 section.blog {
   background-color: #fff;
-  padding: 75px 0px;
+  padding: 50px 0px 75px;
 }
 section.blog article {
   width: 100%;
@@ -36,6 +36,13 @@ section.blog article.blog-home {
 section.blog article .post-header {
   text-align: center;
   font-size: 1.8rem;
+}
+section.blog article .post-header img {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #f7f7f7;
 }
 section.blog article .post-content {
   text-align: justify;

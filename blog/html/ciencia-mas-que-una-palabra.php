@@ -6,6 +6,7 @@
         <div class="post-header">
 
             <h2><?php echo $post['title']; ?></h2>
+            <?php echo $html->img($postid . '.jpg') ?>
 
         </div>
 
@@ -18,7 +19,7 @@
                 leyes utilizando para ello el metodo cientifico.
             </p>
 
-            <p>La ciencia tiene varias clasificaciones:</p>
+            <p>La ciencia tiene varias clasificaciones entre las cuales se pueden mencionar:</p>
 
             <ul>
                 <li>matematica</li>
@@ -29,63 +30,65 @@
                 <li>sociologia</li>
             </ul>
 
-            <p>
-                La fisica es por mucho la ciencia mas intereresante y la que mas ha aportado
-                al conocimiento del universo, especialmente la física teoria
-            </p>
-
-            <h3>¿Qué es la Física Teórica?</h3>
+            <h3>El método cientifico</h3>
 
             <p>
-                Para explicar que es la Física Teórica es necesario entender
-                que es la Física; La Física es una ciencia natural que estudia la energia,
-                la materia, el tiempo, el espacio y las interacciones que puedan tener entre si.
+                El metodo cientifico es el metodo de investigacion utilizado para explicar los fenomenos
+                del universo.
             </p>
 
             <p>
-                Teniendo esto en mente podemos resumir que:
+                Este metodo se basa en dos principios fundamentales, reproducibilidad (el fenomeno debe poder
+                ser reproducido en cualquier lugar y por cualquier persona) y refutabilidad (debe estar expuesto a
+                ser falseado o demostrado como falso).
+
+                <ul>
+                    <li>&bull; <i>Observacion</i> <br>
+                        Consiste en percibir las caracteristicas del fenomeno para crear
+                        una descripcion clara y con el mayor detalle y exactitud posibles.
+                        <br><br>
+                    </li>
+                    <li>&bull; <i>Hipotesis</i> <br>
+                        La hipotesis es una posible solucion al problema, esta puede ser o no verdadera.
+                        <br><br>
+                    </li>
+                    <li>&bull; <i>Experimentacion</i> <br>
+                        Se refiere al estudio del fenomeno reproduciendolo en un ambiente controlado.
+                        <br><br>
+                    </li>
+                    <li>&bull; <i>Analisis</i> <br>
+                        Este es el paso en el cual se interpretan las observaciones y mediciones obtenidas
+                        mediante la experimentacion.
+                        <br><br>
+                    </li>
+                    <li>&bull; <i>Conclusion</i> <br>
+                        Se establece si la hipotesis es o no verdadera, se establecen los parametros para
+                        repetir el experimento.
+                    </li>
+                </ul>
+
             </p>
 
             <p>
-                La Física Teórica es una rama de la Física que crea teórias y modelos
-                matemáticos para explicar y comprender los fenomenos físicos creando
-                además las herramientas para analisar y predecir el comportamiento de dichos
-                fenomenos;
+                Si los experimentos concuerdan con la hipotesis, esta se puede convertir en una teoria.
             </p>
 
+            <h3>Teoria cientifica</h3>
             <p>
-                En otras palabras, la Física Teórica se dedica a crear teorias (Teoremas matematicos)
-                del como funciona el universo (ó todos los universos) tomando la matematica como
-                su mas grande herramienta.
+                Una téoria es una hipotesis que ha sido comprobada por el metodo cientifico y que es capaz
+                de explicar un fenomeno natural.<br>
+                La teoria puede llegar a predecir fenomenos naturales.
             </p>
-
-            <h3>Relatividad</h3>
+            <br>
             <p>
-                Las teorias de relatividad son el logro maximo del intelecto humano, cuando
-                Albert Einstein propuso estas teorias demostro que es posible comprender a gran
-                profundidad el funcionamiento del universo.
-            </p>
-
-            <h3>Mecanica cuantica</h3>
-            <p>
-                Uno de los logros mas importantes de la Física Teórica ha sido la
-                Mecanica Cuantica, esa ciencia loca que nos dice que nada en el universo
-                tiene un estado definido y que la materia puede ser onda y particula a la vez;
-                Fue propuesta por el gran Fisico Max Planck a principios del siglo XX.
-            </p>
-
-            <p>
-                Porque es necesaria este tipo de ciencias es muy complejo de explicar
-                (ó quiza muy facil) todo depende del punto de vista del expectador;
-                Para algunos es importante comprender el funcionamiento del universo,
-                o de como funcionan las cosas dentro de el, otros se conforman con encontrar
-                consuelo en entidades divinas inexistentes.
+                Un pequeño repaso para entender el significado de esta gran palabra,
+                <i>ciencia: lo mas importante en el universo.</i>
             </p>
 
         </div>
 
         <div class="post-footer">
-            <p>Junio 06, 2016</p>
+            <p>Junio 27, 2016</p>
         </div>
 
     </article>
