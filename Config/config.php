@@ -54,3 +54,8 @@ Configure::write('helpers', array('html','seo'));
 Configure::write('network', array('www' => true));
 
 Configure::write('seo', true);
+
+Configure::write('sitemap', array(
+    'blog',
+    'blog/ciencia-mas-que-una-palabra',
+));

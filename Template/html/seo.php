@@ -6,7 +6,8 @@ switch($website){
     case 'sitemap.xml' :
 
         http::header('xml');
-        $seo->sitemap(array('blog'));
+        //$seo->sitemap(array('blog'));
+        $seo->sitemap(Configure::read('sitemap'));
         break;
 
     case 'robots.txt' :
