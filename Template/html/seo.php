@@ -1,3 +1,4 @@
+
 <?php
 
 switch($website){
@@ -5,9 +6,15 @@ switch($website){
     //-- Sitemap
     case 'sitemap.xml' :
 
+        // obtiene todos los posts
+        $posts = (include $this->template('info.post','blog',''));
+
+        // completa el nombre del post
+        function concat($post){ return 'blog' . DS . $post; }
+        $posts = array_map("concat", array_keys($posts));
+
         http::header('xml');
-        //$seo->sitemap(array('blog'));
-        $seo->sitemap(Configure::read('sitemap'));
+        $seo->sitemap(array_merge(['blog'], $posts));
         break;
 
     case 'robots.txt' :
