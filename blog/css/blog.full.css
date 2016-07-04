@@ -195,7 +195,6 @@ section.blog article .post-header {
 section.blog article .post-header img {
   display: block;
   margin: 0px auto;
-  width: 100%;
   max-width: 800px;
   border: 2px solid #f7f7f7;
 }
