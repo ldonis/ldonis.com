@@ -1,6 +1,6 @@
 <?php
 $posts = include $this->template('info.post','blog','');
-$postid = $LesliController['DATA_params'][0];
+$postid = $webparams[0];
 $post = $posts[$postid];
 ?>
 <!Doctype html>
@@ -13,7 +13,7 @@ $post = $posts[$postid];
     $html->head();
     echo '<title>' . $post['title'] . ' | ' . $blogwebtitle . '</title>';
 
-    $seo->meta($blogdescription);
+    $seo->meta($post['title'] . ' - ' . $blogdescription);
     $seo->meta($LesliController['HTTP_uri'],'author');
     $seo->canonical($LesliController['HTTP_uri']);
 
@@ -21,9 +21,9 @@ $post = $posts[$postid];
     $seo->twitterCard(array(
         'card' => 'summary',
         'site' => '@lgdonis',
-        'title' => $blogwebtitle,
-        'description' => $blogdescription,
-        'image' => 'http://www.lesli5.com' . $html->img('screenshoot.png', array('url','path' => 'template')),
+        'title' => $post['title'],
+        'description' => $post['title'] . ' - ' . $blogdescription,
+        'image' => $html->img($postid . '.jpg', array('url','path' => 'blog')),
         'url' => $LesliController['HTTP_url']
     ));
 
@@ -31,10 +31,10 @@ $post = $posts[$postid];
     $seo->facebookCard(array(
         'url' => $LesliController['HTTP_url'],
         'type' => 'website',
-        'title' => $blogwebtitle,
-        'description' => $blogdescription,
+        'title' => $post['title'],
+        'description' => $post['title'] . ' - ' . $blogwebtitle . ' | ' . $blogdescription,
         'image' => array(
-            'content'=> 'http://www.lesli5.com' . $html->img('screenshoot.png', array('url','path' => 'template')),
+            'content'=> $html->img($postid . '.jpg', array('url','path' => 'blog')),
             'width' => '425',
             'height'=> '425'
         )
@@ -63,7 +63,7 @@ $post = $posts[$postid];
 
     include $this->template('blog.header');
 
-    include $this->template($postid,'blog','');
+    include $this->template($postid,'blog','post');
 
     include $this->template('blog.footer.post');
 
