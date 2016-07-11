@@ -2,6 +2,12 @@
 
 return array(
 
+        'importancia-ciencia' => array(
+            'title' => 'La importancia de la ciencia',
+            'date' => '2016',
+            'excerpt' => 'La ciencia y todas sus ramas han sido el pilar fundamental del desarrollo humano a lo largo de la historia a formado parte de nuestras vidas y todos hemos hecho uso de ella de forma directa o no.'
+        ),
+
         'responsive-cat-mi-libreria-css' => array(
             'title' => 'Responsive Cat, Mi libreria CSS',
             'date' => 'Julio 03, 2016',
