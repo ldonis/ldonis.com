@@ -75,7 +75,7 @@
         <div class="rgrid r520">
 
             <div class="column-4">
-                <img alt="Lesli framework logo" src="http://img.ldonis.net/lesli/lesli-logo-250.png">
+                <img alt="Lesli framework logo" src="http://cdn.ldonis.net/assets/logos/lesliframework/lesli-logo-150.png">
             </div>
 
             <div class="column-6">
@@ -97,7 +97,7 @@
         <div class="rgrid r520">
 
             <div class="column-4">
-                <img alt="Responsive Cat logo" src="http://img.ldonis.net/rcat/rcat-logo-notext-325.png">
+                <img alt="Responsive Cat logo" src="http://cdn.ldonis.net/assets/logos/responsivecat/rcat-logo-200.png">
             </div>
 
             <div class="column-6">
@@ -118,7 +118,7 @@
         <div class="rgrid r520">
 
             <div class="column-4">
-                <img alt="Lesli5 logo" src="http://img.ldonis.net/lesli5/lesli5-logo-375.png">
+                <img alt="Lesli5 logo" src="http://cdn.ldonis.net/assets/logos/lesli5/lesli5-logo-200.png">
             </div>
 
             <div class="column-6">
