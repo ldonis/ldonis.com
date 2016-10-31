@@ -53,7 +53,6 @@
 
     </div>
 
-    <br><br><br>
     <?php echo $html->link('- See all posts -','blog'); ?>
 
 </section>
