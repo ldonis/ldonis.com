@@ -68,7 +68,7 @@ module.exports = function (grunt) {
             landing: { src: 'landing/css/landing.css', dest: 'landing/css/landing.min.css' },
 
             // Blog home
-            landing: { src: 'blog/css/blog.css', dest: 'blog/css/blog.min.css' },
+            blog: { src: 'blog/css/blog.css', dest: 'blog/css/blog.min.css' },
 
         },
 
