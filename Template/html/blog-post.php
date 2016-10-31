@@ -1,7 +1,10 @@
 <?php
-$posts = include $this->template('info.post','blog','');
-$postid = $webparams[0];
-$post = $posts[$postid];
+
+// Get post by slug (url)
+$post = $wapi->getPost($LesliController['DATA_params'][0]);
+//var_dump($LesliController);
+//var_dump($post);
+//exit(0);
 ?>
 <!Doctype html>
 <html lang="<?php echo $LesliController['WEBSITE_lang'] ?>">
@@ -11,35 +14,34 @@ $post = $posts[$postid];
     <?php
 
     $html->head();
-    echo '<title>' . $post['title'] . ' | ' . $blogwebtitle . '</title>';
-
-    $seo->meta($post['title'] . ' - ' . $blogdescription);
-    $seo->meta($LesliController['HTTP_uri'],'author');
-    $seo->canonical($LesliController['HTTP_uri']);
+    echo '<title>' . $post->title . ' | ' . $blogwebtitle . '</title>';
+    
+    $seo->meta($post->title . ' - ' . $blogdescription);
+    $seo->meta($LesliController['HTTP_url'],'author');
+    $seo->canonical($LesliController['HTTP_request']);
 
     // Twitter card
     $seo->twitterCard(array(
         'card' => 'summary',
         'site' => '@lgdonis',
-        'title' => $post['title'],
-        'description' => $post['title'] . ' - ' . $blogdescription,
-        'image' => $html->img($postid . '.jpg', array('url','path' => 'blog')),
-        'url' => $LesliController['HTTP_url']
+        'title' => $post->title,
+        'description' => $post->title . ' - ' . $blogdescription,
+        'image' => $post->media->guid,
+        'url' => $html->url('blog' . DS . $post->slug)
     ));
 
     // Facebook card
     $seo->facebookCard(array(
-        'url' => $LesliController['HTTP_url'],
+        'url' => $html->url('blog' . DS . $post->slug),
         'type' => 'website',
-        'title' => $post['title'],
-        'description' => $post['title'] . ' - ' . $blogwebtitle . ' | ' . $blogdescription,
+        'title' => $post->title,
+        'description' => $post->title . ' - ' . $blogwebtitle . ' | ' . $blogdescription,
         'image' => array(
-            'content'=> $html->img($postid . '.jpg', array('url','path' => 'blog')),
+            'content'=> $post->media->guid,
             'width' => '425',
             'height'=> '425'
         )
     ));
-
 
     if (ENV == 'live') :
 
@@ -47,10 +49,7 @@ $post = $posts[$postid];
 
     else :
 
-        echo
-            "\n" . $html->css('rcat.min','public') .
-            "\n" . $html->css('generic', 'Template') .
-            "\n" . $html->css('blog');
+        echo $html->css('blog');
 
     endif;
 
@@ -63,7 +62,37 @@ $post = $posts[$postid];
 
     include $this->template('blog.header');
 
-    include $this->template($postid,'blog','post');
+?>
+    <section class="blog">
+
+        <article class="post">
+
+            <header class="post-header">
+
+                <h2><?php echo $html->link( $post->title , 'blog/' . $post->slug); ?></h2>
+                <img src="<?php echo $post->media->guid ?>" />
+
+            </header>
+
+            <div class="post-content">
+
+                <?php echo $post->content ?>
+
+            </div>
+
+            <div class="post-footer">
+            <?php
+
+                // Share on social media links
+
+            ?>
+            </div>
+
+        </article>
+
+</section>
+
+<?php
 
     include $this->template('blog.footer.post');
 

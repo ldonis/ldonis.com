@@ -1,11 +1,518 @@
-/**
- * Portada
- * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
- * @author Luis Gdonis <http//ldonis.com>
- * @since 4.0.0
- */
-header {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: inherit;
+  text-rendering: optimizelegibility;
+  margin: 0;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.4rem;
+}
+hr {
+  border: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+.rgrid,
+.rblock {
+  width: 100%;
+  font-size: 0;
+}
+.rgrid:before,
+.rblock:before,
+.rgrid:after,
+.rblock:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.rgrid > *,
+.rblock > * {
+  font-size: initial;
+  white-space: initial;
+  display: block;
+}
+@media (min-width: 320px) {
+  .rgrid > *:not(:last-child) {
+    margin-right: 1%;
+  }
+  .rgrid > *,
+  .rblock > * {
+    display: inline-block;
+  }
+}
+.rgrid.columns-01 > * {
+  width: 100%;
+}
+.rgrid .column-01 {
+  width: 7.333333333333334%;
+}
+.rgrid.columns-02 > * {
+  width: 49.5%;
+}
+.rgrid .column-02 {
+  width: 15.666666666666668%;
+}
+.rgrid.columns-03 > * {
+  width: 32.666666666666664%;
+}
+.rgrid .column-03 {
+  width: 24%;
+}
+.rgrid.columns-04 > * {
+  width: 24.25%;
+}
+.rgrid .column-04 {
+  width: 32.333333333333336%;
+}
+.rgrid.columns-05 > * {
+  width: 19.2%;
+}
+.rgrid .column-05 {
+  width: 40.66666666666667%;
+}
+.rgrid.columns-06 > * {
+  width: 15.833333333333334%;
+}
+.rgrid .column-06 {
+  width: 49%;
+}
+.rgrid.columns-07 > * {
+  width: 13.428571428571429%;
+}
+.rgrid .column-07 {
+  width: 57.333333333333336%;
+}
+.rgrid.columns-08 > * {
+  width: 11.625%;
+}
+.rgrid .column-08 {
+  width: 65.66666666666667%;
+}
+.rgrid.columns-09 > * {
+  width: 10.222222222222221%;
+}
+.rgrid .column-09 {
+  width: 74%;
+}
+.rgrid.columns-10 > * {
+  width: 9.1%;
+}
+.rgrid .column-10 {
+  width: 82.33333333333334%;
+}
+.rgrid.columns-11 > * {
+  width: 8.181818181818182%;
+}
+.rgrid .column-11 {
+  width: 90.66666666666667%;
+}
+.rgrid.columns-12 > * {
+  width: 7.416666666666667%;
+}
+.rgrid .column-12 {
+  width: 99%;
+}
+@media (max-width: 320px) {
+  .rgrid.r320 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 420px) {
+  .rgrid.r420 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 520px) {
+  .rgrid.r520 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 620px) {
+  .rgrid.r620 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 720px) {
+  .rgrid.r720 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+.rblock.columns-02 > * {
+  width: 50%;
+}
+.rblock .column-02 {
+  width: 16.666666666666668%;
+}
+.rblock.columns-03 > * {
+  width: 33.333333333333336%;
+}
+.rblock .column-03 {
+  width: 25%;
+}
+.rblock.columns-04 > * {
+  width: 25%;
+}
+.rblock .column-04 {
+  width: 33.333333333333336%;
+}
+.rblock.columns-05 > * {
+  width: 20%;
+}
+.rblock .column-05 {
+  width: 41.66666666666667%;
+}
+.rblock.columns-06 > * {
+  width: 16.666666666666668%;
+}
+.rblock .column-06 {
+  width: 50%;
+}
+.rblock.columns-07 > * {
+  width: 14.285714285714286%;
+}
+.rblock .column-07 {
+  width: 58.333333333333336%;
+}
+.rblock.columns-08 > * {
+  width: 12.5%;
+}
+.rblock .column-08 {
+  width: 66.66666666666667%;
+}
+.rblock.columns-09 > * {
+  width: 11.11111111111111%;
+}
+.rblock .column-09 {
+  width: 75%;
+}
+.rblock.columns-10 > * {
+  width: 10%;
+}
+.rblock .column-10 {
+  width: 83.33333333333334%;
+}
+.rblock.columns-11 > * {
+  width: 9.090909090909092%;
+}
+.rblock .column-11 {
+  width: 91.66666666666667%;
+}
+.rblock.columns-12 > * {
+  width: 8.333333333333334%;
+}
+.rblock .column-12 {
+  width: 100%;
+}
+@media (max-width: 320px) {
+  .rblock.r320 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 420px) {
+  .rblock.r420 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 520px) {
+  .rblock.r520 > * {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+.rnav {
+  width: 100%;
+/*
+    * Menu vertical
+    * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+    * @author Luis Gdonis <http://ldonis.com>
+    * @since 2.0.0
+    */
+/*
+    * Selector de idioma
+    * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+    * @author Luis Gdonis <http://ldonis.com>
+    * @since 2.0.0
+    */
+/*
+    * Navigation menu
+    * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+    * @author Luis Gdonis <http://ldonis.com>
+    * @since 2.1.0
+    */
+}
+.rnav ul {
+  padding: 0;
+}
+.rnav > ul {
+  font-size: 0;
+}
+.rnav li {
+  display: inline-block;
+  font-size: initial;
+}
+.rnav li a {
+  display: block;
+  padding: 0.3rem 0.8rem;
+}
+.rnav.vertical li > ul > li:first-child {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+.rnav.vertical ul li {
+  display: block !important;
+}
+.rnav.lang {
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+}
+.rnav.lang:hover ul {
+  display: block;
+}
+.rnav.lang p:after {
+  content: "\25BE";
+}
+.rnav.lang ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-width: menu-lang-width;
+}
+.rnav.lang ul li {
+  display: block;
+}
+.rnav.menu > input {
+  display: none;
+}
+.rnav.menu > input:checked ~ ul {
+  height: auto;
+}
+.rnav.menu ul {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.rnav.menu ul li {
+  display: block;
+}
+@media (min-width: 800px) {
+  .rnav.menu > label {
+    display: none;
+  }
+  .rnav.menu ul {
+    height: auto;
+  }
+  .rnav.menu ul li {
+    display: inline-block;
+  }
+}
+@font-face {
+  font-family: 'roboto100';
+  src: url("http://cdn.ldonis.net/assets/fonts/roboto100.woff") format('woff');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'roboto300';
+  src: url("http://cdn.ldonis.net/assets/fonts/roboto300.woff") format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'pinyon';
+  src: url("http://cdn.ldonis.net/assets/fonts/pinyon.woff") format('woff');
+  font-weight: 100;
+}
+html,
+body {
+  font-family: 'roboto300';
+  font-size: 1.1rem;
+  color: $black;
+}
+#social {
+  background-color: #3498db;
+  text-align: center;
+}
+#social li {
+  font-size: 1.3rem;
+}
+#social li::before {
+  transition: all linear 0.2s;
+}
+#social li.facebook,
+#social li.twitter,
+#social li.blog {
   background-color: #f7f7f7;
+  color: #333;
+}
+#social li.github,
+#social li.podcast,
+#social li.mail {
+  background-color: #333;
+  color: #f7f7f7;
+}
+#subscribe {
+  padding: 75px 0px 100px;
+}
+#subscribe .rgrid div {
+  vertical-align: middle;
+}
+#subscribe .rgrid .logo {
+  text-align: center;
+}
+#subscribe .rgrid .form input {
+  padding: 10px;
+}
+#subscribe .rgrid .form input[type="text"],
+#subscribe .rgrid .form input[type="email"] {
+  width: 33%;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+#subscribe .rgrid .form input[type="submit"] {
+  color: #f7f7f7;
+  background-color: #333;
+  border: 1px solid #333;
+}
+#subscribe .rgrid .form form div {
+  padding: 25px 0px;
+}
+footer {
+  padding: 25px 0;
+  color: #f7f7f7;
+  background-color: #1d1d1d;
+  text-align: center;
+  border-top: 3px solid #3498db;
+}
+@media (max-width: 460px) {
+  [data-tooltip]::before {
+    display: none !important;
+  }
+}
+@font-face {
+  font-family: 'fontello';
+  src: url("http://cdn.ldonis.net/assets/fonts/icons/fontello/fontello.eot?92423411");
+  src: url("http://cdn.ldonis.net/assets/fonts/icons/fontello/fontello.eot?92423411#iefix") format('embedded-opentype'), url("http://cdn.ldonis.net/assets/fonts/icons/fontello/fontello.woff2?92423411") format('woff2'), url("http://cdn.ldonis.net/assets/fonts/icons/fontello/fontello.woff?92423411") format('woff'), url("http://cdn.ldonis.net/assets/fonts/icons/fontello/fontello.ttf?92423411") format('truetype'), url("http://cdn.ldonis.net/assets/fonts/icons/fontello/fontello.svg?92423411#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+/* opacity: .8; */
+/* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+/* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+/* Animation center compensation - margins should be symmetric */
+/* remove if not needed */
+  margin-left: 0.2em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+/* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-heart:before {
+  content: '\e800';
+}
+.icon-github-round:before {
+  content: '\e801';
+}
+.icon-twitter:before {
+  content: '\e802';
+}
+.icon-arrow-right:before {
+  content: '\e803';
+}
+.icon-arrow-left:before {
+  content: '\e804';
+}
+.icon-facebook:before {
+  content: '\e805';
+}
+.icon-github:before {
+  content: '\e806';
+}
+.icon-edit:before {
+  content: '\e808';
+}
+.icon-podcast:before {
+  content: '\e809';
+}
+.icon-wifi:before {
+  content: '\e80a';
+}
+.icon-mail:before {
+  content: '\e80b';
+}
+.icon-edit-line:before {
+  content: '\e80c';
+}
+.icon-globe:before {
+  content: '\e80d';
+}
+header {
   text-align: center;
   color: #333;
 }
@@ -28,10 +535,7 @@ section.blog article {
   width: 100%;
   max-width: 800px;
   padding: 30px 30px;
-  margin: 0 auto;
-}
-section.blog article.blog-home {
-  background-color: #f7f7f7;
+  margin: 0 auto 35px;
 }
 section.blog article .post-header {
   text-align: center;
@@ -41,7 +545,6 @@ section.blog article .post-header img {
   display: block;
   margin: 0px auto;
   max-width: 800px;
-  border: 2px solid #f7f7f7;
 }
 section.blog article .post-content {
   text-align: justify;
@@ -70,7 +573,10 @@ section.blog article .post-footer p {
   float: right;
   color: #666;
 }
-section.all-posts a {
+section.all-posts article {
+  background-color: #f7f7f7;
+}
+section.all-posts-link a {
   display: block;
   color: #f7f7f7;
   font-size: 1.5rem;

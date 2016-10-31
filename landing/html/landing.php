@@ -1,143 +1,134 @@
-<section>
+<header class="hidden">
+<h1>Luis Gdonis</h1>
+<h2>Software developer</h2>
+</header>
 
-    <article id="portal" class="rcenter vertical">
+<section class="header">
 
+    <article class="rcenter vertical">
         <div>
-
             <div class="rgrid columns-03 r420">
-
                 <div><hr></div>
-
                 <div>
-
                     <span id="foto"></span>
-
                 </div>
-
                 <div><hr></div>
-
             </div>
-
             <p id="slogan">Hello I'm <span></span></p>
-
         </div>
+    </article>  
 
-    </article>
-
-
-    <article id="about">
+    <div class="about">
         <p>Software developer and science evangelist living in
         <?php echo $html->link('<u>Guatemala</u>','http://visitguatemala.com/en',array('target'=>'blank')); ?></p>
-    </article>
+    </div>
 
+</section>
 
-    <article id="blog">
+<section class="blog">
+
+    <h2><?php echo $html->link('My blog', 'blog') ?></h2>
+    
+    <div class="rblock columns-03">
 
         <?php
 
-        // link al blog
-        echo $html->link('<h3>latest blog articles</h3>', 'blog');
+        $posts = $wapi->getPosts('per_page=6');
 
-        $posts = include $this->template('info.post','blog','');
-
-        foreach($posts as $id => $post):
-
-            $post_url = 'blog' . DS . $id;
-
+        foreach($posts as $post):
+            
         ?>
 
-            <div class="post">
-                <h4><?php echo $html->link($post['title'], $post_url); ?></h4>
-                <p>
-                <?php
-                    echo $post['date'] . ' - ' . substr($post['excerpt'],0,150);
-                    echo $html->link( ' - read more - ', $post_url );
-                ?>
-                </p>
-                <hr>
-            </div>
+        <a class="post" href="<?php echo $html->url('blog' . DS . $post->slug) ?>">
+            <h3><?php echo $post->title ?></h3>
+            <img src="<?php echo $post->media->details->sizes->medium->url ?>" />
+            <p><?php echo $post->date_formatted ?></p>
+        </a>
 
         <?php
 
         endforeach;
-
+        
         ?>
 
-    </article>
+    </div>
 
-    <br><br>
-
-    <article id="projects">
-
-        <h3>Projects</h3>
-
-        <?php // Lesli framework // ?>
-        <div class="rgrid r520">
-
-            <div class="column-4">
-                <img alt="Lesli framework logo" src="http://cdn.ldonis.net/assets/logos/lesliframework/lesli-logo-150.png">
-            </div>
-
-            <div class="column-6">
-                <h4>Lesli Framework</h4>
-                <p>
-                    Lesli is a PHP web framework to build static websites, providing
-                    a logical directories structure and a good collection of helpers
-                    and too many more great features.
-                </p>
-                <ul class="rnav">
-                    <li><a target="_blank" href="http://lesliframework.com" class="website">website<i class="icon-globe"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/LesliFramework/" class="github">github<i class="icon-github"></i></a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <?php // Responsive Cat // ?>
-        <div class="rgrid r520">
-
-            <div class="column-4">
-                <img alt="Responsive Cat logo" src="http://cdn.ldonis.net/assets/logos/responsivecat/rcat-logo-200.png">
-            </div>
-
-            <div class="column-6">
-                <h4>Responsive Cat</h4>
-                <p>
-                    Responsive Cat is a mobile-first CSS micro framework that allowing
-                    to write clean and syntactically code according to the standards.
-                </p>
-                <ul class="rnav">
-                    <li><a target="_blank" href="http://responsivecat.com" class="website">website<i class="icon-globe"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/ResponsiveCat/" class="github">github<i class="icon-github"></i></a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <?php // Responsive Cat // ?>
-        <div class="rgrid r520">
-
-            <div class="column-4">
-                <img alt="Lesli5 logo" src="http://cdn.ldonis.net/assets/logos/lesli5/lesli5-logo-200.png">
-            </div>
-
-            <div class="column-6">
-                <h4>Lesli5</h4>
-                <p>
-                    Lesli5 is a platform to share beautiful websites and templates
-                    built with Lesli Framework and Responsive Cat distributed under
-                    the creative commons license.
-                </p>
-                <ul class="rnav">
-                    <li><a target="_blank" href="http://lesli5.com" class="website">website<i class="icon-globe"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/Lesil5/" class="github">github<i class="icon-github"></i></a></li>
-                </ul>
-            </div>
-
-        </div>
-
-    </article>
-
-
+    <br><br><br>
+    <?php echo $html->link('- See all posts -','blog'); ?>
 
 </section>
+
+<?php
+/*
+<section class="projects">
+
+    <h2>Projects</h2>
+
+    <?php // Lesli framework // ?>
+    <div class="rgrid r520">
+
+        <div class="column-04">
+            <img alt="Lesli framework logo" src="http://cdn.ldonis.net/assets/logos/lesliframework/lesli-logo-150.png">
+        </div>
+
+        <div class="column-06">
+            <h4>Lesli Framework</h4>
+            <p>
+                Lesli is a PHP web framework to build static websites, providing
+                a logical directories structure and a good collection of helpers
+                and too many more great features.
+            </p>
+            <ul class="rnav">
+                <li><a target="_blank" href="http://lesliframework.com" class="website">website</i></a></li>
+                <li><a target="_blank" href="https://github.com/LesliFramework/" class="github">github</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <?php // Responsive Cat // ?>
+    <div class="rgrid r520">
+
+        <div class="column-04">
+            <img alt="Responsive Cat logo" src="http://cdn.ldonis.net/assets/logos/responsivecat/rcat-logo-200.png">
+        </div>
+
+        <div class="column-06">
+            <h4>Responsive Cat</h4>
+            <p>
+                Responsive Cat is a mobile-first CSS micro framework that allowing
+                to write clean and syntactically code according to the standards.
+            </p>
+            <ul class="rnav">
+                <li><a target="_blank" href="http://responsivecat.com" class="website">website</a></li>
+                <li><a target="_blank" href="https://github.com/ResponsiveCat/" class="github">github</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <?php // Responsive Cat // ?>
+    <div class="rgrid r520">
+
+        <div class="column-04">
+            <img alt="Lesli5 logo" src="http://cdn.ldonis.net/assets/logos/lesli5/lesli5-logo-200.png">
+        </div>
+
+        <div class="column-06">
+            <h4>Lesli5</h4>
+            <p>
+                Lesli5 is a platform to share beautiful websites and templates
+                built with Lesli Framework and Responsive Cat distributed under
+                the creative commons license.
+            </p>
+            <ul class="rnav">
+                <li><a target="_blank" href="http://lesli5.com" class="website">website</a></li>
+                <li><a target="_blank" href="https://github.com/Lesil5/" class="github">github</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+*/
+?>

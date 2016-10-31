@@ -1,6 +1,4 @@
-<?php
-$posts = include $this->template('info.post','blog','');
-?>
+
 <!Doctype html>
 <html lang="<?php echo $LesliController['WEBSITE_lang'] ?>">
 <head>
@@ -38,19 +36,16 @@ $posts = include $this->template('info.post','blog','');
     ));
 
 
-    if (ENV == 'live') :
+    if (ENV == 'live') {
 
         echo $html->css();
-        $html->addJs($html->js('bloganalytics','template'));
+        $html->includeJs($html->js('analytics', 'template'));
 
-    else :
+    } else {
 
-        echo
-            "\n" . $html->css('rcat.min','public') .
-            "\n" . $html->css('generic', 'Template') .
-            "\n" . $html->css('blog');
+        echo $html->css($website);
 
-    endif;
+    }
 
 
 ?>

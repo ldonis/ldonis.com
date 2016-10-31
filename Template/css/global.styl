@@ -1,0 +1,120 @@
+// * Base styles
+// * - - - - - - - - - - - - - - -
+@require 'base.styl'
+
+
+// * Carga modulos de RCat globales
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+include-rbase()
+include-rgrid()
+include-rnav()
+
+// *  Fuentes
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+@font-face
+    font-family 'roboto100'
+    src url('http://cdn.ldonis.net/assets/fonts/roboto100.woff') format('woff')
+    font-weight 100
+@font-face
+    font-family 'roboto300'
+    src url('http://cdn.ldonis.net/assets/fonts/roboto300.woff') format('woff')
+    font-weight 300
+
+@font-face
+    font-family 'pinyon'
+    src url('http://cdn.ldonis.net/assets/fonts/pinyon.woff') format('woff')
+    font-weight 100
+
+html
+body
+    font-family $font-body
+    font-size 1.1rem
+    color $black
+
+
+
+// * Social links
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#social
+    background-color $color-blue-donis
+    text-align center
+
+    li
+        font-size 1.3rem
+
+        &::before
+            transition all linear .2s
+
+        &.facebook
+        &.twitter
+        &.blog
+            background-color $color-gray
+            color $color-gray-dark
+
+        &.github
+        &.podcast
+        &.mail
+            background-color $color-gray-dark
+            color $color-gray
+
+
+
+// * Suscribe form
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+#subscribe
+    padding 75px 0px 100px
+    
+    .rgrid
+        // contenedores
+        div
+            vertical-align middle
+        
+        // contenedor de logo
+        .logo
+            text-align center
+        
+        // contenedor de formulario
+        .form
+            // controles
+            input
+                padding 10px
+                
+                
+            // campos de texto
+            input[type="text"]
+            input[type="email"]
+                width 33%
+                border none
+                border-bottom 1px solid $color-gray-dark
+                
+            // boton de envio
+            input[type="submit"]
+                color $color-gray
+                background-color $color-gray-dark
+                border 1px solid $color-gray-dark
+                
+            // contenedor de controles de form
+            form div
+                padding 25px 0px
+                
+                
+
+// * Freelance link
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+footer
+    padding 25px 0
+    color $color-gray
+    background-color $color-black
+    text-align center
+    border-top 3px solid $color-blue-donis
+
+
+@media (max-width: 460px)
+    [data-tooltip]::before
+        display none !important
+
+
+
+// * Include icons
+// * - - - - - - - - - - - - - - -
+@require 'icons'

@@ -1,5 +1,5 @@
 
-<section class="all-posts">
+<section class="all-posts-link">
     <?php echo $html->link('- all my posts -','blog'); ?>
 </section>
 

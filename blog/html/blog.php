@@ -1,40 +1,41 @@
+<section class="blog all-posts">
 
-<section class="blog">
+        <?php
 
-    <?php
+        $posts = $wapi->getPosts('per_page=6');
 
-    foreach($posts as $id => $post):
+        foreach($posts as $post):
 
-        $post_url = $website . DS . $id;
+        ?>
 
-    ?>
+        <article class="post">
 
-    <article class="blog-home">
+            <header class="post-header">
 
-        <div class="post-header">
+                <h2><?php echo $html->link( $post->title , 'blog/' . $post->slug); ?></h2>
+                <img src="<?php echo $post->media->guid ?>" />
 
-            <h2><?php echo $html->link($post['title'], $post_url); ?></h2>
-            <?php echo $html->img( $id . '.jpg'); ?>
+            </header>
 
-        </div>
+            <div class="post-content">
 
-        <div class="post-content">
+                <?php echo $post->excerpt ?>
 
-            <?php echo $post['excerpt']; ?>
+            </div>
 
-        </div>
+            <div class="post-footer">
+                <?php echo $html->link( 'Leer más...', 'blog/' . $post->slug ); ?>
+                <p><?php echo $post->date_formatted; ?></p>
+            </div>
 
-        <div class="post-footer">
-            <?php echo $html->link( 'Leer más...', $post_url ); ?>
-            <p><?php echo $post['date']; ?></p>
-        </div>
+        </article>
 
-    </article>
+        <?php
 
-    <?php
+        endforeach;
+        
+        ?>
 
-    endforeach;
-
-    ?>
+    
 
 </section>

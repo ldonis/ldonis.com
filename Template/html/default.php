@@ -12,12 +12,7 @@
 
     } else {
 
-        echo
-        "\n" . $html->js('jquery.min', 'public') .
-        "\n" . $html->js('typed.min', 'template') .
-        "\n" . $html->css('rcat.min','public') .
-        "\n" . $html->css('generic','template') .
-        "\n" . $html->css($website);
+        echo $html->css($website);
 
     }
 
@@ -35,18 +30,16 @@
 
     include $this->template('footer');
 
-    if (ENV == 'live'){
-
-        echo
-        $html->js('jquery.min', 'public') .
-        $html->js('typed.min', 'template') .
-        $html->js('analytics', 'template');
-
-    }
-
     if($website == 'landing'):
 
     ?>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+
+    <?php echo $html->js('typed.min', 'template'); ?>
+
     <script>
         jQuery(document).ready(function(){
 
@@ -68,6 +61,12 @@
     <?php
 
     endif;
+
+    if (ENV == 'live'){
+
+        echo $html->js('analytics', 'template');
+
+    }
 
     ?>
 </body>
