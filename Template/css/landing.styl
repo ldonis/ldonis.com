@@ -1,0 +1,100 @@
+// * Base styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require 'base.styl'
+
+
+// * Carga modulos de Lesli CSS
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require Lesli--load('base')
+@require Lesli--load('helper')
+
+
+// *  Fuentes
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~s
+@font-face
+    font-family 'opensans300'
+    src url('https://cdn.lesli.tech/assets/fonts/opensans300.ttf') format('TrueType')
+    font-weight 300
+
+@font-face
+    font-family 'opensans400'
+    src url('https://cdn.lesli.tech/assets/fonts/opensans400.ttf') format('TrueType')
+    font-weight 400
+
+
+// reset
+lesli-base()
+
+
+html
+body
+    font-family $font-body
+    font-size 1.1rem
+    
+
+header
+    min-height 100vh
+    text-align center
+    lesli-helper-center('vertical')
+    background-image url(Lesli--image('planets.png','Template'))
+    background-repeat no-repeat
+    background-position center left
+    //border-bottom 15px solid $color-blue
+    
+    div
+        
+        // profile picture
+        img
+            border-radius 50%
+            max-width 150px
+            width 100%
+            
+        // about me
+        p
+            
+            a
+                color darken($color-blue, 20) !important
+
+                &:hover
+                    border-bottom 1px solid $color-blue
+
+
+
+        // social icons
+        ul
+            margin 0
+            li
+                display inline-block
+                a
+                    font-size 2rem
+                    transition all linear .1s
+                    
+                    &:hover
+                        color $color-blue
+
+
+article
+    background-color $color-gray-light
+
+    a
+        display block
+        padding 4rem
+        font-size 1.5rem
+        text-align center
+        font-family $font-body-light
+        background-image url(Lesli--image('rocket.png','Template'))
+        background-repeat no-repeat
+        background-position 10% center
+        
+        
+footer
+    p
+        padding 3px
+        font-size .8rem
+        text-align center
+        background-color darken($color-blue, 5)
+
+
+// * Base styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require 'iconsgonzo'

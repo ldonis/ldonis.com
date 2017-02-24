@@ -8,33 +8,21 @@ module.exports = function (grunt) {
         ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
         copy: {
 
-            ///* Responsive Cat CSS Framework
-            ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-            ResponsiveCat: {
+            ///* LesliCSS Framework
+            LesliCSS: {
                 expand: true,
-                cwd: 'node_modules/responsivecat/',
+                cwd: 'node_modules/leslicss/',
                 src: 'src/**/*',
-                dest: 'Template/css/rcat/',
+                dest: 'Template/css/lesli/',
             },
 
-            ///* Responsive Cat style constructor framework
-            ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+            ///* LesliCSS Framework - init file
             ResponsiveCatIndex:{
                 expand: true,
                 flatten: true,
                 filter: 'isFile',
-                src: 'node_modules/responsivecat/index.styl',
-                dest: 'Template/css/rcat/'
-            },
-
-            ///* jQuery JavaScript library
-            ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-            jQuery:{
-                expand: true,
-                flatten: true,
-                filter: 'isFile',
-                src: 'node_modules/jquery/dist/jquery.min.js',
-                dest: 'Template/js/'
+                src: 'node_modules/leslicss/index.styl',
+                dest: 'Template/css/lesli/'
             }
 
         },
@@ -48,48 +36,19 @@ module.exports = function (grunt) {
                 options:{ 'compress': false },
                 files:{
 
-                    // Home page
-                    'landing/css/landing.css' : 'landing/css/landing.styl',
-
-                    // Blog home
-                    'blog/css/blog.css' : 'blog/css/blog.styl',
+                    // 404 page
+                    'Template/css/landing.css' : 'Template/css/landing.styl',
 
                 }
             }
         },
 
 
-
-        ///* Minify CSS
-        ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-        cssmin: {
-
-            // landing page
-            landing: { src: 'landing/css/landing.css', dest: 'landing/css/landing.min.css' },
-
-            // Blog home
-            blog: { src: 'blog/css/blog.css', dest: 'blog/css/blog.min.css' },
-
-        },
-
-
-
-        ///* Minify JavaScript files
-        ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-        uglify: {
-            options: { compress: { unused: false } },
-        },
-
-
-
-
         ///* Watch
         ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
         watch: {
             stylus:{
-                files: ['Template/css/global.styl',
-                        'landing/css/*.styl',
-                        'blog/css/*.styl'],
+                files: ['Template/css/landing.styl'],
                 tasks: ['stylus']
             }
         }
@@ -101,8 +60,6 @@ module.exports = function (grunt) {
     ///* Including plugins and dependencies
     ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
     grunt.loadNpmTasks('grunt-contrib-stylus');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
 

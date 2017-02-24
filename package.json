@@ -1,17 +1,14 @@
 {
-    "name": "ldonis.com",
-    "title": "Sitio web oficial",
-    "homepage": "http://ldonis.com",
-    "author": "Luis Gdonis <hello@ldonis.com>",
-    "license": "GPL-3.0",
+    "name": "ldonis",
+    "title": "Luis Gdonis - Personal website",
+    "homepage": "https://www.ldonis.com",
+    "author": "Luis Gdonis <emc2@ldonis.com>",
+    "license": "All rights reserved",
     "devDependencies": {
         "grunt": "^1",
         "grunt-contrib-watch": "^1",
         "grunt-contrib-copy" : "^1",
-        "grunt-contrib-cssmin": "^1",
         "grunt-contrib-stylus": "^1",
-        "grunt-contrib-uglify": "^2.0.0",
-        "jquery": "1.*",
-        "rcat-framework": "https://github.com/ResponsiveCat/ResponsiveCat.git#master"
+        "leslicss": "https://github.com/LesliTech/LesliCSS.git#master"
     }
 }
