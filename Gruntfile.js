@@ -17,7 +17,7 @@ module.exports = function (grunt) {
             },
 
             ///* LesliCSS Framework - init file
-            ResponsiveCatIndex:{
+            LesliCSSIndex:{
                 expand: true,
                 flatten: true,
                 filter: 'isFile',
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
     ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
     grunt.registerTask('vendor', ['copy']);
     grunt.registerTask('compile',['stylus']);
-    grunt.registerTask('deploy', ['copy', 'stylus', 'cssmin']);
+    grunt.registerTask('deploy', ['copy', 'stylus']);
 
 
 };

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Luis Gdonis &bull; Software developer</title>
 	<?php
 		$html->head();
 		echo $html->css('landing', 'Template');
@@ -26,7 +26,7 @@
 		<a href="mailto:emc2@ldonis.com">I'm available for freelance projects</a>
 	</article>
 	<footer>
-		<p>&copy; ldonis</p>
+		<p>&copy; Luis Gdonis - <?php echo date('Y') ?></p>
 	</footer>
 	<script>
 
