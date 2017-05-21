@@ -11,6 +11,5 @@ Lesli\Web\System\Config::set('info', [
 
 // Plantillas
 Lesli\Web\System\Config::set('template',[
-	'default' => 'landing',
-	'landing' => 'landing'
+	'default' => 'default'
 ]);
