@@ -1,0 +1,40 @@
+
+// * Including RCat framework
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require 'lesli/'
+
+
+// * Carga modulos de Lesli CSS
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require Lesli--load('base')
+@require Lesli--load('grid')
+
+
+// * Inclulding standards 
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+@require 'standard.styl'
+
+
+// * Icons
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require 'gonzoicons'
+
+
+// * Fuentes
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+@font-face
+    font-family 'opensans300'
+    src url('https://cdn.lesli.tech/assets/fonts/opensans300.ttf') format('truetype')
+    font-weight 300
+
+
+// * Base styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+lesli-base()
+
+
+html
+body
+    font-family $font-body
+    font-size 1.1rem
+    

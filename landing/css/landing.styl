@@ -1,11 +1,11 @@
-// * Base styles
+
+// * Template
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-@require 'base.styl'
+@require '../../Template/css/template'
 
 
 // * Carga modulos de Lesli CSS
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-@require Lesli--load('base')
 @require Lesli--load('helper')
 
 
@@ -21,15 +21,6 @@
     font-weight 300
 
 
-// reset
-lesli-base()
-
-
-html
-body
-    font-family $font-body
-    font-size 1.1rem
-    
 
 header
     min-height 100vh
@@ -92,8 +83,3 @@ footer
         font-size .8rem
         text-align center
         background-color darken($color-blue, 5)
-
-
-// * Base styles
-// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-@require 'iconsgonzo'

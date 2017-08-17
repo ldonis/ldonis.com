@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Luis Gdonis &bull; Software developer</title>
-	<?php
-		\Lesli\Web\System\Html::head();
-		echo \Lesli\Web\System\Html::css('landing', 'Template');
-	?>
+    <?php Html::head() ?>
+    <title><?php echo $Lesli->info->name . ' &bull; ' . $Lesli->info->description; ?></title>
+    <?php
+    if (ENV == 'live'){
+    	echo Html::css();
+    }else{
+        echo Html::css($Lesli->www->section);
+    }
+    ?>
 </head>
 <body>
 

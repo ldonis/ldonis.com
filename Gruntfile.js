@@ -1,5 +1,8 @@
 
 module.exports = function (grunt) {
+
+    var LesliGruntVersion = "2.0.0";
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -32,12 +35,21 @@ module.exports = function (grunt) {
         ///* Compile stylus to css
         ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
         stylus:{
-            compile:{
+            compile_only:{
                 options:{ 'compress': false },
                 files:{
 
-                    // 404 page
-                    'Template/css/landing.css' : 'Template/css/landing.styl',
+                    // Home page
+                    'landing/css/landing.css' : 'landing/css/landing.styl'
+
+                }
+            },
+            compile_minify:{
+                options:{ 'compress': true },
+                files:{
+
+                    // Home page
+                    'landing/css/landing.min.css' : 'landing/css/landing.styl',
 
                 }
             }
@@ -48,8 +60,8 @@ module.exports = function (grunt) {
         ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
         watch: {
             stylus:{
-                files: ['Template/css/landing.styl'],
-                tasks: ['stylus']
+                files: ['**/css/*.styl'],
+                tasks: ['stylus:compile_only']
             }
         }
 
@@ -68,7 +80,7 @@ module.exports = function (grunt) {
     ///* Defining Development tasks
     ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
     grunt.registerTask('vendor', ['copy']);
-    grunt.registerTask('compile',['stylus']);
+    grunt.registerTask('compile',['stylus:compile_only']);
     grunt.registerTask('deploy', ['copy', 'stylus']);
 
 

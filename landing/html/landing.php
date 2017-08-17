@@ -1,6 +1,7 @@
 <header>
 	<div>
-	<img alt="ldonis profile picture" src="http://www.ldonis.dev\Website\Template\img\ldonis-casual.jpg"/>		<p>Founder of <a href="https://www.lesli.tech">LesliTech</a></p>
+	<?php echo Html::img('ldonis-casual.jpg',['alt'=>'profile picture'],  'Template') ?>
+		<p>Founder of <a href="https://www.lesli.tech">LesliTech</a></p>
 		<p>entrepreneur, dreamer, software developer</p>
 		<ul>
 			<li><a target="_blank" href="https://twitter.com/lgdonis" title="Twitter">
