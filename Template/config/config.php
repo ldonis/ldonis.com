@@ -13,3 +13,8 @@ Config::set('info', [
 Config::set('template',[
 	'default' => 'default'
 ]);
+
+//
+Config::set('network', [
+	'www' => true
+]);
