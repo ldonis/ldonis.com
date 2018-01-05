@@ -9,12 +9,12 @@ Config::set('info', [
 ]);
 
 
-// Plantillas
-Config::set('template',[
-	'default' => 'default'
-]);
+// Template
+Config::set('template',['default' => 'default']);
 
-//
-Config::set('network', [
-	'www' => true
-]);
+
+// Network
+Config::set('network', ['www' => true]);
+
+// Routing
+Router::connect('default','landing');
