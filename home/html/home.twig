@@ -1,0 +1,59 @@
+
+{# extending template #}
+{% extends template.layout('default') %}
+
+
+{# Section content #}
+{% block content %}
+
+
+<header>
+	<div>
+		{{ html.img('casual.2018.jpg', { alt: 'profile picture' }) }}
+		<p>Founder of <a href="https://www.lesli.tech">LesliTech</a></p>
+		<p>entrepreneur, dreamer, software developer</p>
+		<ul>
+			<li><a target="_blank" href="https://twitter.com/lgdonis" title="Twitter">
+				<i class="g-icon-twitter"></i></a></li>
+			<li><a target="_blank" href="https://github.com/ldonis" title="Github">
+				<i class="g-icon-github"></i></a></li>
+		</ul>
+	</div>
+</header>
+
+<section class="about">
+
+	<img alt="ldonis logo" src="https://cdn.lesli.tech/assets/logos/ldonis/ldonis-logo.svg" />
+	<p>Hello! My name is Luis Donis</p>
+	<p>I'm the founder of <a href="https://www.lesli.tech">Lesli</a> an open source software company</p>
+	<p>Member of Arduino and Python community of Guatemala</p>
+
+</section>
+
+<section class="portfolio">
+	<h2>Some of my projects</h2>
+	<div class="grid">
+		{% for logo in data.logos %}
+		<div>
+			{{ 
+				html.img('project-' ~ logo ~ '.logo.jpg', { 
+					alt: 'project logo', 
+					path: 'Template', 
+					class: logo
+				}) 
+			}}
+		</div>
+		{% endfor %}
+	</div>
+</section>
+
+<section class="lesli">
+
+	<a href="https://lesli.tech">
+		<img src="https://cdn.lesli.tech/assets/logos/leslitech/lesli-logo.svg">
+		<h2>Lesli Technologies</h2>
+	</a>
+
+</section>
+
+{% endblock %}

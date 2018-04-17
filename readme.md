@@ -1,6 +1,15 @@
-<img alt="ldonis-logo" src="http://img.ldonis.net/ldonis/ldonis-logo.svg" width="80px">
 
-##### My personal website [http://ldonis.com](http://ldonis.com/)
+<p align="center">
+	<a href="https://www.ldonis.com" target="_blank">
+		<img alt="ldonis logo" src="https://cdn.lesli.tech/assets/logos/ldonis/ldonis-logo.svg" />
+	</a>
+</p>
+
+<h3 align="center">My personal website and portfolio</h3>
+
 ---
 
-Todo el contenido esta sujeto a derechos de autor
+Version 3
+
+---
+&copy; Todos los derechos reservados.

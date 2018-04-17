@@ -1,8 +1,6 @@
 
 module.exports = function (grunt) {
 
-    var LesliGruntVersion = "2.0.0";
-
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -36,22 +34,26 @@ module.exports = function (grunt) {
         ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
         stylus:{
             compile_only:{
-                options:{ 'compress': false },
-                files:{
-
-                    // Home page
-                    'landing/css/landing.css' : 'landing/css/landing.styl'
-
-                }
+                options:{ 'include css': true, 'compress': false },
+                files: [{
+                    expand: true,   // Enable dynamic expansion.
+                    cwd: './',      // Src matches are relative to this path.
+                    src: ['**/css/*.styl', '!Template/**'], // Actual pattern(s) to match.
+                    dest: './',     // Destination path prefix.
+                    ext: '.css',    // Dest filepaths will have this extension.
+                    extDot: 'first' // Extensions in filenames begin after the first dot
+                }]
             },
             compile_minify:{
-                options:{ 'compress': true },
-                files:{
-
-                    // Home page
-                    'landing/css/landing.min.css' : 'landing/css/landing.styl',
-
-                }
+                options:{ 'include css': true, 'compress': true },
+                files: [{
+                    expand: true,   // Enable dynamic expansion.
+                    cwd: './',      // Src matches are relative to this path.
+                    src: ['**/css/*.styl', '!Template/**'], // Actual pattern(s) to match.
+                    dest: './',     // Destination path prefix.
+                    ext: '.min.css',    // Dest filepaths will have this extension.
+                    extDot: 'first' // Extensions in filenames begin after the first dot
+                }]
             }
         },
 
@@ -80,7 +82,7 @@ module.exports = function (grunt) {
     ///* Defining Development tasks
     ///* ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
     grunt.registerTask('vendor', ['copy']);
-    grunt.registerTask('compile',['stylus:compile_only']);
+    grunt.registerTask('compile', ['stylus:compile_only']);
     grunt.registerTask('deploy', ['copy', 'stylus']);
 
 

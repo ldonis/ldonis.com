@@ -6,7 +6,7 @@
 
 // * Carga modulos de Lesli CSS
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-@require Lesli--load('helper')
+@require Lesli--load('flexbox')
 
 
 // *  Fuentes
@@ -25,7 +25,7 @@
 header
     min-height 100vh
     text-align center
-    lesli-helper-center('vertical')
+    Lesli-flex-center('vertical')
     background-image url(Lesli--image('planets.png','Template'))
     background-repeat no-repeat
     background-position center left
@@ -38,6 +38,10 @@ header
             border-radius 50%
             max-width 150px
             width 100%
+            transition all linear .2s
+            
+            &:hover
+                border-radius 2px
             
         // about me
         p
@@ -63,23 +67,49 @@ header
                         color $color-blue
 
 
-article
-    background-color $color-gray-light
 
-    a
-        display block
-        padding 4rem
-        font-size 1.5rem
-        text-align center
-        font-family $font-body-light
-        background-image url(Lesli--image('rocket.png','Template'))
-        background-repeat no-repeat
-        background-position 10% center
-        
-        
-footer
+section.about
+    padding 4.5rem 0 5rem
+    text-align center
+    background-color $color-blue
+
     p
-        padding 3px
-        font-size .8rem
-        text-align center
-        background-color darken($color-blue, 5)
+        margin 0 auto .2rem
+        color $color-white
+        font-size 1.4rem
+        
+
+section.portfolio
+    text-align center
+    padding 8rem 0
+    
+    div.grid
+        Lesli-grid(columns:4, margin: 50px, breakpoint: 480px)
+        margin 2rem auto 0
+        max-width 1000px
+
+        div
+            vertical-align middle
+            
+        img
+            height 100px
+            filter grayscale(1)
+            transition all linear .2s
+            
+            &:hover
+                filter grayscale(0)
+        
+        img.hrconnectp
+            max-height 80px
+        img.shutiando
+        img.pizzacode
+            max-height 65px
+
+
+section.lesli
+    text-align center
+    padding 8rem 0 10rem
+    background-color rgba($color-gray, .5)
+    
+    img
+        width 100px
