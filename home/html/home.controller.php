@@ -10,7 +10,7 @@ Class HomeController extends LesliController {
 
 	public function get($request, $response, $params){
 
-		$data = ['data'=>['logos'=>['shutiando', 'finca', 'hrconnectp', 'pizzacode']]];
+		$data = ['data'=>['logos'=>['shutiando', 'hrconnectp', 'pizzacode']]];
 
 		return $this->view->render($response, $this->template->section(), $data);
 

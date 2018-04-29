@@ -417,7 +417,7 @@ body {
   font-size: 1.1rem;
 }
 section.contact {
-  background-color: $color-gray-light-10;
+  background-color: #f0f0f0;
   text-align: center;
   padding: 6rem 0;
 }
