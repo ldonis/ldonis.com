@@ -5,17 +5,17 @@
     "author": "Luis Gdonis <emc2@ldonis.com>",
     "license": "GPL-3.0",
     "devDependencies": {
-        "grunt": "^1",
-        "grunt-cli": "^1.2.0",
-        "grunt-contrib-copy": "^1",
-        "grunt-contrib-stylus": "^1",
-        "grunt-contrib-watch": "^1",
+        "browser-sync": "^2.24",
+        "chart.js": "^2.7",
+        "gulp": "^3.9",
+        "gulp-stylus": "^2.7",
         "leslicss": "git+https://github.com/LesliTech/LesliCSS.git#master"
     },
     "scripts": {
-        "vendor": "grunt vendor",
-        "compile": "grunt compile",
-        "dev": "grunt watch",
-        "deploy": "grunt deploy"
+        "gulp": "gulp",
+        "vendor": "gulp vendor",
+        "stylus": "gulp stylus",
+        "build": "gulp build",
+        "dev": "gulp dev"
     }
 }

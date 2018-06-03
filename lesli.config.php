@@ -31,11 +31,11 @@
 * ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
 * @author Luis Gdonis <emc2@ldonis.com>
 */
-Config::set('info', [
+Config::set($app, [
 	'description' => 'Software Developer',
 	'name' => 'ldonis',
 	'version' => '3.0',
-	'env' => 'dev'
+	'env' => 'live'
 ]);
 
 
@@ -46,9 +46,4 @@ Config::set('info', [
 */
 
 $this->get('/', 'HomeController:get')->setName('home');
-$this->get('/home[/]', 'HomeController:goHome')->setName('home');
-$this->get('/about[/]', 'AboutController:get')->setName('about');
-$this->get('/portfolio[/]', 'PortfolioController:get')->setName('portfolio');
-$this->get('/projects[/]', 'ProjectsController:get')->setName('projects');
-$this->get('/contact[/]', 'ContactController:get')->setName('contact');
-$this->get('/resume/{token}', 'ResumeController:get')->setName('resume');
+$this->get('/home[/]', 'LesliController:goHome')->setName('home');

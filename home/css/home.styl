@@ -6,19 +6,7 @@
 
 // * Carga modulos de Lesli CSS
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-@require Lesli--load('flexbox')
-
-
-// *  Fuentes
-// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~s
-@font-face
-    font-family 'roboto100'
-    src url('https://cdn.lesli.tech/assets/fonts/roboto100.woff') format('woff')
-    font-weight 100
-@font-face
-    font-family 'roboto300'
-    src url('https://cdn.lesli.tech/assets/fonts/roboto300.woff') format('woff')
-    font-weight 300
+@require Lesli--load('flex')
 
 
 
@@ -26,12 +14,17 @@ header
     min-height 100vh
     text-align center
     Lesli-flex-center('vertical')
-    background-image url(Lesli--image('planets.png','Template'))
+    background-image url(Lesli--image('planets.png'))
     background-repeat no-repeat
     background-position center left
-    //border-bottom 15px solid $color-blue
+    border-bottom 10px solid $color-blue
     
     div
+        
+        h1
+            font-family $font-family-title
+            font-weight 100
+            margin 0 0 10px
         
         // profile picture
         img
@@ -65,51 +58,3 @@ header
                     
                     &:hover
                         color $color-blue
-
-
-
-section.about
-    padding 4.5rem 0 5rem
-    text-align center
-    background-color $color-blue
-
-    p
-        margin 0 auto .2rem
-        color $color-white
-        font-size 1.4rem
-        
-
-section.portfolio
-    text-align center
-    padding 8rem 0
-    
-    div.grid
-        Lesli-grid(columns:4, margin: 50px, breakpoint: 480px)
-        margin 2rem auto 0
-        max-width 1000px
-
-        div
-            vertical-align middle
-            
-        img
-            height 100px
-            filter grayscale(1)
-            transition all linear .2s
-            
-            &:hover
-                filter grayscale(0)
-        
-        img.hrconnectp
-            max-height 80px
-        img.shutiando
-        img.pizzacode
-            max-height 65px
-
-
-section.lesli
-    text-align center
-    padding 8rem 0 10rem
-    background-color rgba($color-gray, .5)
-    
-    img
-        width 100px

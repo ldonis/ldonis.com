@@ -7,7 +7,6 @@
 // * Carga modulos de Lesli CSS
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
 @require Lesli--load('base')
-@require Lesli--load('grid')
 
 
 // * Inclulding standards 
@@ -23,6 +22,10 @@
 // * Fuentes
 // * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
 @font-face
+    font-family 'roboto100'
+    src url('https://cdn.lesli.tech/assets/fonts/roboto100.woff') format('woff')
+    font-weight 100
+@font-face
     font-family 'opensans300'
     src url('https://cdn.lesli.tech/assets/fonts/opensans300.ttf') format('truetype')
     font-weight 300
@@ -37,47 +40,3 @@ html
 body
     font-family $font-family-body
     font-size 1.1rem
-    
-
-// * Contact form
-// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
-section.contact
-    background-color $color-gray-light
-    text-align center
-    padding 6rem 0
-    
-    img
-        transform rotate(-15deg)
-        width 100px
-    
-    h2
-        font-family $font-title-title
-        font-size 2rem
-        padding 1rem 0
-    
-    form
-        width 98%
-        max-width 550px
-        margin 0 auto
-
-        input
-        button
-        textarea
-            width 100%
-            padding 14px
-            display block
-            margin-top 5px
-            border-radius 2px
-            border 1px solid rgb(230, 230, 230)
-            
-        button
-            transition all linear 0.1s
-            background-color rgba($color-blue, 0.7)
-            color $color-white
-            
-            &:hover
-                background-color rgba($color-blue, 0.85)
-                cursor pointer
-
-        textarea
-            resize none
