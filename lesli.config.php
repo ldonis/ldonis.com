@@ -34,7 +34,7 @@ Config::set('website', [
 	'description' => 'Entrepreneur, dreamer, software developer.',
 	'name' => 'Luis Donis',
 	'version' => '3.0',
-	'env' => 'dev'
+	'live' => false
 ]);
 
 
