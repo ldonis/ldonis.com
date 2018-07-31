@@ -1,0 +1,136 @@
+@require '../../Template/css/template'
+@require Lesli--load('flex')
+
+header
+section
+footer
+	Lesli-flex-center('vertical')
+	height 100vh
+	margin 0 auto
+
+
+header
+
+	h1
+		font-size 3rem
+		font-weight 300
+
+	hr
+		width 80%
+		margin-bottom .8rem
+		border-top-color $color-blue
+
+section
+	h1
+		font-size 4rem
+		font-weight 300
+
+	h3
+		font-size 2.5rem
+	
+	hr
+		margin 5px auto 10px
+		width 50%
+		
+	p
+		width 90%
+		margin 5px auto
+		max-width 1200px
+
+
+footer
+
+	h2
+		font-size 3.5rem
+		font-family $font-family-title
+		
+	hr
+		width 75%
+		margin 10px auto
+		
+	p.socialmedia
+		margin-top 25px
+		span
+			margin 0 20px
+
+
+div.socialmedia
+	width 98%
+	max-width 1200px
+	display flex
+	justify-content space-between
+	padding 0 25px 25px
+	font-size 1.3rem
+	
+
+/*
+* Helpers
+*/
+hr
+	width 100%
+	display block
+	margin 0 auto
+	border-top 1px solid $color-gray
+	border-bottom 0
+
+a
+	text-decoration underline
+
+
+.center
+	text-align center
+	
+
+.list-simple
+	
+	li
+		&:before
+			content "\2219"
+			
+		ul
+			padding-left 40px
+			
+			li
+				font-size .9rem
+
+			li:before
+				content "\2218"
+
+section
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	text-align center
+	
+	h3
+	p
+		text-shadow 0px 0px 5px #fff
+		
+	hr
+		border-top 1px solid darken($color-gray, 20)
+		
+
+
+
+header
+	background-image linear-gradient(to bottom, rgba(255,255,255,.7), rgba(255,255,255,.7)), url(Lesli--image('section.about.jpg'))
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	
+	img
+		margin-bottom 20px
+		width 190px
+
+
+section.start
+	background-image linear-gradient(to bottom, rgba(255,255,255,.7), rgba(255,255,255,.7)), url(Lesli--image('cat-sleeping.jpg'))
+	
+section.legal
+	background-image linear-gradient(to bottom, rgba(255,255,255,.7), rgba(255,255,255,.7)), url(Lesli--image('section.gtd-inbox.gif'))
+
+section.ideas
+	background-image linear-gradient(to bottom, rgba(255,255,255,.7), rgba(255,255,255,.7)), url(Lesli--image('section.gtd-actuar.gif'))
+
+section.tips
+	background-image linear-gradient(to bottom, rgba(255,255,255,.7), rgba(255,255,255,.7)), url(Lesli--image('section.time.gif'))

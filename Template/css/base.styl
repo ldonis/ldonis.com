@@ -1,0 +1,52 @@
+
+// * Including Lesli Framework
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+@require 'lesli/'
+
+
+// * Carga modulos de Lesli CSS
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+//@require Lesli--load('module_name')
+
+
+// * Inclulding standards 
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+@require 'standard'
+
+
+// * Fuentes
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+@font-face
+    font-family 'Raleway'
+    font-weight 100
+    src url('https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNwE44TYFq.woff2') format('woff2')
+
+@font-face
+    font-family 'Raleway'
+    font-weight 300
+    src url('https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqZPAA.woff2') format('woff2')
+
+
+// * Base styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+Lesli-base()
+
+*
+    font-family $font-family-body
+    color $color-black
+    font-weight 300
+
+
+// * Global dom styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+body
+    font-size 1.2rem
+
+
+@media(max-width: 480px)
+
+    body
+        font-family $font-family-body
+        font-size 1rem
+        color $color-black
+        

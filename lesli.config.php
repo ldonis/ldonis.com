@@ -1,6 +1,6 @@
 <?php
 /**
-* Lesli Web
+* Lesli
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -14,36 +14,41 @@
 *
 * You should have received a copy of the GNU General Public License
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
-*
+* 
 * PHP Version 7
 *
-* @category Controller
-* @package  LesliWeb/Core
 * @author   Luis Gdonis <emc2@ldonis.com>
 * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
-* @version  GIT: 1.0.0 alpha
+* @version  GIT: 1.0.0-alpha
 * @link     https://www.lesli.tech
 */
 
+Use Lesli\Config;
 
 /**
 * General information details
 * ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
 * @author Luis Gdonis <emc2@ldonis.com>
 */
-Config::set($app, [
-	'description' => 'Software Developer',
-	'name' => 'ldonis',
+Config::set('website', [
+	'description' => 'Entrepreneur, dreamer, software developer.',
+	'name' => 'Luis Donis',
 	'version' => '3.0',
-	'env' => 'live'
+	'env' => 'dev'
 ]);
 
 
 /**
-* Router definition
+* Website public routes
 * ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
 * @author Luis Gdonis <emc2@ldonis.com>
 */
+return function ($router) {
 
-$this->get('/', 'HomeController:get')->setName('home');
-$this->get('/home[/]', 'LesliController:goHome')->setName('home');
+	$router->get('/', 'home');
+	$router->get('/home/', 'home');
+
+	$router->get('/slides/', 'slides');
+	$router->get('/slides/entrepreneur/', 'slides-entrepreneur');
+
+};

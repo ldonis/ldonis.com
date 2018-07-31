@@ -1,0 +1,25 @@
+
+{# extending template #}
+{% extends template.layout('default') %}
+
+
+{# Section content #}
+{% block content %}
+
+
+<header>
+	{{ html.img('slide-play.png', { alt:'' }) }}
+	<hr>
+	<h1>ldonis</h1>
+	<p>Slides for talks &amp; workshops</p>
+</header>
+<section>
+	<div>
+		<a href="{{ html.url('slides/entrepreneur') }}">
+			<span>Entrepreneur</span>
+		</a>
+	</div>
+</section>
+
+
+{% endblock %}
