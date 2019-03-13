@@ -1,0 +1,67 @@
+
+@import './template.scss';
+
+
+// · 
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+header {
+    min-height: 100vh;
+    text-align: center;
+    @include lesli-flex-center(true);
+    background-image: url('../images/planets-bg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    border-bottom: 10px solid $color-blue;
+
+    div {
+        
+        h1 {
+            font-family: $font-family-title;
+            font-weight: 100;
+            margin: 0 0 10px;
+        }
+
+        // profile picture
+        img {
+            border-radius: 50%;
+            max-width: 150px;
+            width: 100%;
+            transition: all linear .2s;
+            
+            &:hover {
+                border-radius: 2px;
+            }
+                
+        } 
+
+        // about me
+        p {
+            a {
+                color: darken($color-blue, 20) !important;
+                &:hover {
+                    border-bottom: 1px solid $color-blue;
+                }
+            }
+        }
+
+
+        // social icons
+        ul {
+            margin: .8rem auto;
+            li {
+                display: inline-block;
+                a{
+
+                    svg {
+                        width: 1.4rem;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

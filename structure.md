@@ -3,7 +3,6 @@
 
 ldonis.com 					home page
 ldonis.com/about			about ldonis
-ldonis.com/portfolio		commercial projects
 ldonis.com/projects			lesli projects
 ldonis.com/talks			talks and workshops
 ldonis.com/contact			contact page

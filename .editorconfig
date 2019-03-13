@@ -10,10 +10,11 @@ insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,rb,haml,scss,rake,yml}]
+[*.{ts,vue,js,json,php,twig,css,styl,scss}]
 charset = utf-8
 
 # 2 space indentation
-[*.{js,rb,haml,scss,rake,yml}]
+[*.{ts,vue,js,json,php,twig,css,styl,scss}]
 indent_style = space
 indent_size = 4
+

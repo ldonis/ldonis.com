@@ -1,0 +1,70 @@
+/*
+* ldonis.com - Slides for talks & workshops
+*
+*
+* @author   Luis Donis <emc2@ldonis.com>
+* @license  
+* @version  1.0.0
+* @link     https://slides.ldonis.com
+*/
+
+
+// · Including Lesli CSS
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+@import '../../node_modules/leslicss/lesli';
+
+
+// · Including variables
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+
+// · Global color pallete
+$color-white: #ffffff;
+$color-black: #494D55;
+
+$color-gray: rgb(220, 220, 220);
+$color-gray-light: lighten($color-gray, 8);
+
+$color-blue: #3498DB;
+
+// · Font families
+$font-family-body: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-title: $font-family-body;
+
+
+// · Fonts
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300');
+
+
+// · Base styles
+// · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
+@include lesli-base();
+
+* {
+    font-family: $font-family-body;
+    color: $color-black;
+    font-weight: 300;
+}
+    
+
+
+// * Global dom styles
+// * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~ 
+body {
+    font-size: 1.2rem;
+}
+    
+
+
+@media(max-width: 480px) {
+
+    body {
+        font-family: $font-family-body;
+        font-size: 1rem;
+        color: $color-black;
+    }
+        
+}
+
+    
+        
