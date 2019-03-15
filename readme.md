@@ -5,6 +5,5 @@
 	</a>
 </p>
 
-<h3 align="center">My personal website</h3>
----
-&copy; Todos los derechos reservados.
+#### My personal website
+
