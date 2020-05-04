@@ -4,6 +4,6 @@
     "homepage": "https://ldonis.com",
     "author": "Luis Donis <emc2@ldonis.com>",
     "devDependencies": {
-        "leslicss": "git+https://github.com/LesliTech/LesliCSS.git#master"
+        "lesli-css": "0.3.0"
     }
 }

@@ -11,7 +11,7 @@
 
 // · Including Lesli CSS
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
-@import '../../node_modules/leslicss/lesli';
+@import '../../node_modules/lesli-css/lesli.scss';
 
 
 // · Including variables
@@ -38,7 +38,7 @@ $font-family-title: $font-family-body;
 
 // · Base styles
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
-@include lesli-base();
+@include lesli-css-base();
 
 * {
     font-family: $font-family-body;

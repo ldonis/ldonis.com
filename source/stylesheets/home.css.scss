@@ -7,7 +7,7 @@
 header {
     min-height: 100vh;
     text-align: center;
-    @include lesli-flex-center(true);
+    @include lesli-css-flex-center(true);
     background-image: url('../images/planets-bg.png');
     background-repeat: no-repeat;
     background-position: center left;
