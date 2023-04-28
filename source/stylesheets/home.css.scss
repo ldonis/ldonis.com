@@ -5,9 +5,10 @@
 // · 
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
 header {
-    min-height: 100vh;
-    text-align: center;
     @include lesli-css-flex-center(true);
+    height: 100vh;
+    min-height: 600px;
+    text-align: center;
     background-image: url('../images/planets-bg.png');
     background-repeat: no-repeat;
     background-position: center left;
@@ -36,32 +37,35 @@ header {
 
         // about me
         p {
+            letter-spacing: 1;
+            margin-bottom: .4rem;
             a {
                 color: darken($color-blue, 20) !important;
                 &:hover {
                     border-bottom: 1px solid $color-blue;
                 }
             }
+
+            &.job {
+                font-family: Tahoma, Verdana, Arial;
+                font-weight: 400;
+                margin: 1rem 0;
+            }
         }
 
 
         // social icons
         ul {
-            margin: .8rem auto;
+            margin: 2rem auto;
             li {
                 display: inline-block;
-                a{
-
+                a {
+                    padding: .4rem;
                     svg {
                         width: 1.4rem;
                     }
-
                 }
-
             }
-
         }
-
     }
-
 }
